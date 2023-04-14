@@ -2,6 +2,7 @@ import Head from "next/head";
 
 // Layout and Components
 import { MainLayout } from "../layouts";
+import { Header } from "../components";
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
       </Head>
 
       <MainLayout>
-        <h1>Kicks - Ecommerce</h1>
+        <Header />
       </MainLayout>
     </div>
   );
