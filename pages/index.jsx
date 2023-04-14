@@ -1,5 +1,8 @@
 import Head from "next/head";
 
+// Layout and Components
+import { MainLayout } from "../layouts";
+
 export default function Home() {
   return (
     <div>
@@ -12,9 +15,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <MainLayout>
         <h1>Kicks - Ecommerce</h1>
-      </main>
+      </MainLayout>
     </div>
   );
 }
