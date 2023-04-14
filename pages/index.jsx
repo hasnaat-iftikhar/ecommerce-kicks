@@ -2,7 +2,7 @@ import Head from "next/head";
 
 // Layout and Components
 import { MainLayout } from "../layouts";
-import { Header } from "../components";
+import { Container, Header } from "../components";
 
 export default function Home() {
   return (
@@ -17,7 +17,9 @@ export default function Home() {
       </Head>
 
       <MainLayout>
-        <Header />
+        <Container className="mt-8">
+          <Header />
+        </Container>
       </MainLayout>
     </div>
   );

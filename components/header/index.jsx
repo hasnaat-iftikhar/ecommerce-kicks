@@ -11,7 +11,7 @@ import HeaderLogo from "../../assets/logo_header.svg";
 import SearchIcon from "../../assets/icons/search.svg";
 import UserIcon from "../../assets/icons/user.svg";
 
-const Header = () => {
+const Header = ({ className }) => {
   const menu = [
     {
       name: "New Drops 🔥",
@@ -28,7 +28,11 @@ const Header = () => {
   ];
 
   return (
-    <header className="bg-fa_white p-8 rounded-3xl flex justify-between items-center">
+    <header
+      className={`bg-fa_white p-8 rounded-3xl flex justify-between items-center ${
+        className ?? ""
+      }`}
+    >
       <div className="w-[40%] flex justify-start items-center gap-x-10">
         {menu.map((item, i) => (
           <Link
