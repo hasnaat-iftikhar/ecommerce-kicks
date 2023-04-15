@@ -7,9 +7,9 @@ import { Open_Sans } from "next/font/google";
 const open_sans = Open_Sans({ subsets: ["hebrew"] });
 
 // Images
-import HeaderLogo from "../../assets/logo_header.svg";
-import SearchIcon from "../../assets/icons/search.svg";
-import UserIcon from "../../assets/icons/user.svg";
+import HeaderLogo from "../../../assets/logo_header.svg";
+import SearchIcon from "../../../assets/icons/search.svg";
+import UserIcon from "../../../assets/icons/user.svg";
 
 const Header = ({ className }) => {
   const menu = [
