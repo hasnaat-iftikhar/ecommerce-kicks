@@ -50,6 +50,8 @@ const Header = ({ className }) => {
           alt="Kicks - Ecommerce store"
           width={128}
           height={32}
+          priority={true}
+          as="image"
         />
       </div>
       <div className="w-[40%] flex justify-end items-center gap-x-10">
