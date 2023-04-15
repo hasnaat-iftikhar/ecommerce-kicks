@@ -50,7 +50,7 @@ const Header = ({ className }) => {
           alt="Kicks - Ecommerce store"
           width={128}
           height={32}
-          priority={true}
+          priority
           as="image"
         />
       </div>

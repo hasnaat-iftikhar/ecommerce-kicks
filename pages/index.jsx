@@ -2,7 +2,7 @@ import Head from "next/head";
 
 // Layout and Components
 import { MainLayout } from "../layouts";
-import { Container, Header } from "../components";
+import { Container, Header, HeroSection } from "../components";
 
 export default function Home() {
   return (
@@ -19,6 +19,7 @@ export default function Home() {
       <MainLayout>
         <Container className="mt-8">
           <Header />
+          <HeroSection />
         </Container>
       </MainLayout>
     </div>
