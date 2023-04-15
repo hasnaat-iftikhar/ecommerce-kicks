@@ -59,7 +59,7 @@ const HeroSection = () => {
             NIKE AIR MAX
           </h2>
           <p className="text-[24px] leading-[32px] text-gray">
-            Nike introducing the new air max for everyone's comfort
+            Nike introducing the new air max for everyone&apos;s comfort
           </p>
           <Button className="max-w-[138px] mt-6 text-white bg-blue">
             Shop now
