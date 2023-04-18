@@ -46,6 +46,7 @@ const Header = ({ className }) => {
       </div>
       <div className="w-[20%] flex justify-center items-center">
         <Image
+          className="cursor-pointer"
           src={HeaderLogo}
           alt="Kicks - Ecommerce store"
           width={128}
@@ -57,6 +58,7 @@ const Header = ({ className }) => {
       <div className="w-[40%] flex justify-end items-center gap-x-10">
         <button>
           <Image
+            className="cursor-pointer"
             src={SearchIcon}
             alt="Search your fav shoe now!"
             width={28}
@@ -65,6 +67,7 @@ const Header = ({ className }) => {
         </button>
         <button>
           <Image
+            className="cursor-pointer"
             src={UserIcon}
             alt="View your profile"
             width={28}
@@ -73,7 +76,7 @@ const Header = ({ className }) => {
         </button>
         <button className="bg-yellow w-[32px] h-[32px] flex justify-center items-center rounded-full">
           <p
-            className={`text-gray_dark text-base ${open_sans.className} font-semibold`}
+            className={`text-gray_dark text-base ${open_sans.className} font-semibold cursor-pointer`}
           >
             0
           </p>
