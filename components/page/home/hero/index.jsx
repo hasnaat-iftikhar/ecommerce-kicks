@@ -33,10 +33,10 @@ const ImageSwitcher = ({ className }) => {
 const HeroSection = () => {
   return (
     <section>
-      <h1 className="w-fit mx-auto my-6 uppercase font-bold text-center text-[15.4vw] leading-tight text-gray_dark">
+      <h1 className="w-fit mx-auto my-6 uppercase font-bold text-center text-[15.4vw] xxl:text-[224px] leading-tight text-gray_dark">
         Do it <span className="text-blue">right</span>
       </h1>
-      <div className="w-[92vw] h-[53.6vw] rounded-[64px] relative overflow-hidden flex justify-start items-end">
+      <div className="w-[92vw] xxl:w-full h-[53.6vw] xxl:h-[750px] rounded-[64px] relative overflow-hidden flex justify-start items-end">
         <div className="bg-gray_dark absolute top-[166px] left-[-84px] transform -rotate-90 py-6 px-[25px] rounded-b-2xl">
           <p className="text-white text-[16px] leading-[18.96px] font-semibold">
             Nike product of the year
