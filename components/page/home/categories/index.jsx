@@ -1,6 +1,7 @@
 import React from "react";
 
 // Components
+import Text from "../../../layout/text";
 import Container from "../../../layout/container";
 
 const CategoriesSection = ({ className }) => {
