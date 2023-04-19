@@ -8,7 +8,10 @@ const NewDropsSection = ({ className }) => {
   return (
     <section className={`${className ?? ""}`}>
       <div className="flex justify-between items-end">
-        <Text type="sectionHeading" className="max-w-[589px]">
+        <Text
+          type="sectionHeading"
+          className="max-w-[589px] leading-[95%] text-gray_dark"
+        >
           Don’t miss out new drops
         </Text>
         <Button className="max-w-[190px] mt-6 text-white bg-blue">

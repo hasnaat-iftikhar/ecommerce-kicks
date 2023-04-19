@@ -3,6 +3,7 @@ import Image from "next/image";
 
 // Components
 import Button from "../../../layout/button";
+import Text from "../../../layout/text";
 
 // Images
 import BannerImage1 from "../../../../assets/products/heroBanner1.png";
@@ -55,9 +56,12 @@ const HeroSection = () => {
         <ImageSwitcher className="absolute bottom-[32px] right-[32px]" />
 
         <div className="w-[490px] m-12">
-          <h2 className="uppercase w-fit text-[74px] leading-tight font-semibold text-white">
+          <Text
+            type="sectionHeading"
+            className="max-w-[589px] leading-[88px] text-white"
+          >
             NIKE AIR MAX
-          </h2>
+          </Text>
           <p className="text-[24px] leading-[32px] text-gray">
             Nike introducing the new air max for everyone&apos;s comfort
           </p>
