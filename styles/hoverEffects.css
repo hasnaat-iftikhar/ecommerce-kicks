@@ -17,7 +17,7 @@
   width: 0px;
   height: 100%;
   border-radius: 8px;
-  background-color: #324fc7;
+  background-color: hsla(0, 0%, 0%, 0.2);
   position: absolute;
   top: 0;
   bottom: 0;
