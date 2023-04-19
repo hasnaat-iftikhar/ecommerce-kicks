@@ -2,7 +2,7 @@ import Head from "next/head";
 
 // Layout and Components
 import { MainLayout } from "../layouts";
-import { Container, Header, HeroSection } from "../components";
+import { Container, Header, HeroSection, NewDropsSection } from "../components";
 
 export default function Home() {
   return (
@@ -17,9 +17,12 @@ export default function Home() {
       </Head>
 
       <MainLayout>
-        <Container className="mt-8">
-          <Header />
-          <HeroSection />
+        <Container className="mt-8 flex flex-col gap-y-32">
+          <div>
+            <Header />
+            <HeroSection />
+            <NewDropsSection className="mt-[90px]" />
+          </div>
         </Container>
       </MainLayout>
     </div>
