@@ -14,7 +14,7 @@ const ProductCard = ({ className, name, image, price }) => {
           New
         </p>
       </div>
-      <div className="relative w-full xl:h-[340px] xxl:h-[400px] border-[8px] border-white rounded-[28px]">
+      <div className="relative w-full xl:h-[340px] xxl:h-[350px] border-[8px] border-white rounded-[28px]">
         <Image
           src={image}
           alt={name}
