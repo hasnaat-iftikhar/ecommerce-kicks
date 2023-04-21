@@ -7,8 +7,12 @@ import Container from "../../../layout/container";
 const CategoriesSection = ({ className }) => {
   return (
     <section className={`bg-gray_dark ${className ?? ""}`}>
-      <Container>
-        <Text className="text-white leading-[95%]">Categories</Text>
+      <Container className="pt-[90px]">
+        <div>
+          <Text type="sectionHeading" className="text-white leading-[95%]">
+            Categories
+          </Text>
+        </div>
       </Container>
     </section>
   );

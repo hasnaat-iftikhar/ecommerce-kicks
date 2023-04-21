@@ -2,7 +2,13 @@ import Head from "next/head";
 
 // Layout and Components
 import { MainLayout } from "../layouts";
-import { Container, Header, HeroSection, NewDropsSection } from "../components";
+import {
+  CategoriesSection,
+  Container,
+  Header,
+  HeroSection,
+  NewDropsSection,
+} from "../components";
 
 export default function Home() {
   return (
@@ -16,14 +22,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <MainLayout>
-        <Container className="mt-8 flex flex-col gap-y-32">
-          <div>
-            <Header />
-            <HeroSection />
-            <NewDropsSection className="mt-[90px]" />
-          </div>
+      <MainLayout className="mt-8 flex flex-col gap-y-32">
+        <Container>
+          <Header />
+          <HeroSection />
+          <NewDropsSection className="mt-[90px]" />
         </Container>
+        <CategoriesSection />
       </MainLayout>
     </div>
   );
