@@ -1,4 +1,5 @@
 @import "./hoverEffects.css";
+@import "./splide.css";
 
 @tailwind base;
 @tailwind components;

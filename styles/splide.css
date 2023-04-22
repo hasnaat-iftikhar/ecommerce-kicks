@@ -1,0 +1,62 @@
+.splide {
+  width: 100%;
+  padding: 0;
+  position: initial;
+}
+
+.splide__pagination {
+  display: none;
+}
+
+.splide__slide {
+  width: 50%;
+  border-radius: 0;
+}
+
+.splide__track {
+  border-top-left-radius: 64px;
+  border-top-right-radius: 64px;
+}
+
+.splide__arrows {
+  width: 96px;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  top: 28px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.splide__arrow[type="button"] {
+  width: 40px;
+  height: 40px;
+  background-color: #e7e7e3;
+  opacity: 1;
+  position: static;
+  transform: translateY(0%);
+  border-radius: 8px;
+}
+
+.splide__arrow:disabled {
+  opacity: 0.3;
+}
+
+.splide__arrow::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+
+.splide__arrow svg {
+  display: none;
+}
+
+.splide__arrow--next::before {
+  background-image: url("../assets/icons/chevronNext.svg");
+}
+
+.splide__arrow--prev::before {
+  background-image: url("../assets/icons/chevronPrev.svg");
+}
