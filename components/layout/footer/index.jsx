@@ -109,7 +109,11 @@ const Footer = ({ className }) => {
   ];
 
   return (
-    <div className={`relative bg-blue rounded-[48px] ${className ?? ""}`}>
+    <div
+      className={`relative bg-blue rounded-[48px] overflow-hidden ${
+        className ?? ""
+      }`}
+    >
       <div className="pt-16  px-[72px] flex flex-row items-center">
         <div className="flex-1">
           <h2 className="max-w-[510px] uppercase text-[48px] font-semibold text-white leading-[57px]">
