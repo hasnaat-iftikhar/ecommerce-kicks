@@ -32,7 +32,9 @@ export default function Home() {
         </Container>
         <CategoriesSection />
         <ReviewsSection />
-        <Footer />
+        <Container>
+          <Footer className="mb-[68px]" />
+        </Container>
       </MainLayout>
     </div>
   );
