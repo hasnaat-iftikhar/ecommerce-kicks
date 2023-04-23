@@ -1,26 +1,34 @@
 import Image from "next/image";
 import React from "react";
 
+// Icons
+import StarIcon from "../../../assets/icons/star.svg";
+import StarEmptyIcon from "../../../assets/icons/starEmpty.svg";
+
 const StarRating = ({ rating }) => {
   const fullStars = Math.floor(rating);
-  const hasHalfStar = rating % 1 !== 0;
   const emptyStars = Math.floor(5 - rating);
 
   const starIcons = [];
 
   for (let i = 0; i < fullStars; i++) {
-    starIcons.push(<i className="fa fa-star" key={`star-${i}`} />);
-  }
-
-  if (hasHalfStar) {
-    starIcons.push(<i className="fa fa-star-half-o" key="half-star" />);
+    starIcons.push(<Image src={StarIcon} alt="Star" width={24} height={24} />);
   }
 
   for (let i = 0; i < emptyStars; i++) {
-    starIcons.push(<i className="fa fa-star-o" key={`empty-star-${i}`} />);
+    starIcons.push(
+      <Image src={StarEmptyIcon} alt="Star" width={24} height={24} />
+    );
   }
 
-  return <div>{starIcons}</div>;
+  return (
+    <div className="flex items-center">
+      {starIcons}
+      <span className="ml-1 text-[16px] leading-[21.79px] text-gray_dark font-medium">
+        {rating}.0
+      </span>
+    </div>
+  );
 };
 
 const ReviewCard = ({
@@ -39,11 +47,15 @@ const ReviewCard = ({
     >
       <div className="bg-white p-8 flex flex-row justify-start items-start gap-x-2">
         <div className="flex-1">
-          <h4>{feedback ?? "Feedback Title"}</h4>
-          <p>{description ?? "Here will be the description of the feedback"}</p>
+          <h4 className="text-[24px] leading-[28.44px] font-semibold text-gray_dark">
+            {feedback ?? "Feedback Title"}
+          </h4>
+          <p className="mt-2 text-[16px] leading-[21.79px] text-gray_dark opacity-80">
+            {description ?? "Here will be the description of the feedback"}
+          </p>
           <StarRating rating={rating} />
         </div>
-        <div className="w-fit">
+        <div className="w-fit rounded-full overflow-hidden">
           <Image src={userImage} alt="User image" width={64} height={64} />
         </div>
       </div>
