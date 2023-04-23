@@ -1,6 +1,8 @@
 export { default as Header } from "./layout/header";
+export { default as Footer } from "./layout/footer";
 export { default as Container } from "./layout/container";
 export { default as Button } from "./layout/button";
+export { default as Input } from "./layout/input";
 export { default as Text } from "./layout/text";
 export { default as ProductCard } from "./layout/productCard";
 export { default as ProductCardsWrapper } from "./layout/productCardsWrapper";

@@ -3,7 +3,7 @@ import React from "react";
 const Button = ({ className, children }) => {
   return (
     <button
-      className={`btn-hoverEffect relative overflow-hidden w-full py-4 px-8 rounded-lg uppercase text-[14px] leading-[15.69px] font-medium tracking-[0.25px] ${
+      className={`btn-hoverEffect relative overflow-hidden w-full py-4 rounded-lg uppercase text-[14px] leading-[15.69px] font-medium tracking-[0.25px] ${
         className ?? ""
       }`}
     >

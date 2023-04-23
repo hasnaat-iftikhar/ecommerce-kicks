@@ -5,6 +5,7 @@ import { MainLayout } from "../layouts";
 import {
   CategoriesSection,
   Container,
+  Footer,
   Header,
   HeroSection,
   NewDropsSection,
@@ -31,6 +32,7 @@ export default function Home() {
         </Container>
         <CategoriesSection />
         <ReviewsSection />
+        <Footer />
       </MainLayout>
     </div>
   );
