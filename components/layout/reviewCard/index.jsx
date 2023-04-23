@@ -1,6 +1,10 @@
 import Image from "next/image";
 import React from "react";
 
+// Font families
+import { Open_Sans } from "next/font/google";
+const open_sans = Open_Sans({ subsets: ["hebrew"] });
+
 // Icons
 import StarIcon from "../../../assets/icons/star.svg";
 import StarEmptyIcon from "../../../assets/icons/starEmpty.svg";
@@ -50,7 +54,9 @@ const ReviewCard = ({
           <h4 className="text-[24px] leading-[28.44px] font-semibold text-gray_dark">
             {feedback ?? "Feedback Title"}
           </h4>
-          <p className="mt-2 text-[16px] leading-[21.79px] text-gray_dark opacity-80">
+          <p
+            className={`mt-2 text-[16px] leading-[21.79px] text-gray_dark opacity-80 ${open_sans.className} font-normal`}
+          >
             {description ?? "Here will be the description of the feedback"}
           </p>
           <StarRating rating={rating} />
