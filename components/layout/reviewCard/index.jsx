@@ -9,7 +9,7 @@ const open_sans = Open_Sans({ subsets: ["hebrew"] });
 import StarIcon from "../../../assets/icons/star.svg";
 import StarEmptyIcon from "../../../assets/icons/starEmpty.svg";
 
-const StarRating = ({ rating }) => {
+const StarRating = ({ className, rating }) => {
   const fullStars = Math.floor(rating);
   const emptyStars = Math.floor(5 - rating);
 
@@ -26,7 +26,7 @@ const StarRating = ({ rating }) => {
   }
 
   return (
-    <div className="flex items-center">
+    <div className={`flex items-center ${className ?? ""}`}>
       {starIcons}
       <span className="ml-1 text-[16px] leading-[21.79px] text-gray_dark font-medium">
         {rating}.0
@@ -59,7 +59,7 @@ const ReviewCard = ({
           >
             {description ?? "Here will be the description of the feedback"}
           </p>
-          <StarRating rating={rating} />
+          <StarRating className="mt-2" rating={rating} />
         </div>
         <div className="w-fit rounded-full overflow-hidden">
           <Image src={userImage} alt="User image" width={64} height={64} />
