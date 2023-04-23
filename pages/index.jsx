@@ -8,6 +8,7 @@ import {
   Header,
   HeroSection,
   NewDropsSection,
+  ReviewsSection,
 } from "../components";
 
 export default function Home() {
@@ -29,6 +30,7 @@ export default function Home() {
           <NewDropsSection className="mt-[90px]" />
         </Container>
         <CategoriesSection />
+        <ReviewsSection />
       </MainLayout>
     </div>
   );
