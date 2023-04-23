@@ -153,7 +153,7 @@ const Footer = ({ className }) => {
             <div className="flex flex-col gap-y-2">
               {categoriesCol.map((c, i) => (
                 <Link href={c.url} key={i}>
-                  <ColumnText>{c.name}</ColumnText>
+                  <ColumnText className="cursor-pointer">{c.name}</ColumnText>
                 </Link>
               ))}
             </div>
@@ -163,7 +163,7 @@ const Footer = ({ className }) => {
             <div className="flex flex-col gap-y-2">
               {companyCol.map((c, i) => (
                 <Link href={c.url} key={i}>
-                  <ColumnText>{c.name}</ColumnText>
+                  <ColumnText className="cursor-pointer">{c.name}</ColumnText>
                 </Link>
               ))}
             </div>
@@ -173,7 +173,13 @@ const Footer = ({ className }) => {
             <div className="flex flex-row gap-x-6">
               {socialLinks.map((s, i) => (
                 <Link href={s.url} key={i}>
-                  <Image src={s.icon} alt={s.name} width={24} height={24} />
+                  <Image
+                    className="cursor-pointer"
+                    src={s.icon}
+                    alt={s.name}
+                    width={24}
+                    height={24}
+                  />
                 </Link>
               ))}
             </div>

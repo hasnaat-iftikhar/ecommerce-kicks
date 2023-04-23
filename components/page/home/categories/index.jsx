@@ -46,8 +46,9 @@ const CategoriesSection = ({ className }) => {
                 <h4 className="w-[min-content] text-4xl font-semibold text-gray_dark uppercase">
                   {s.name}
                 </h4>
-                <button className="bg-gray_dark w-[48px] h-[48px] rounded-lg flex justify-center items-center">
+                <button className="cursor-pointer bg-gray_dark w-[48px] h-[48px] rounded-lg flex justify-center items-center">
                   <Image
+                    className="cursor-pointer"
                     src={RedirectIcon}
                     width={32}
                     height={32}
