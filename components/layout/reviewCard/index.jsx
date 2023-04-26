@@ -16,12 +16,26 @@ const StarRating = ({ className, rating }) => {
   const starIcons = [];
 
   for (let i = 0; i < fullStars; i++) {
-    starIcons.push(<Image src={StarIcon} alt="Star" width={24} height={24} />);
+    starIcons.push(
+      <Image
+        key={`fullStar_key${i}`}
+        src={StarIcon}
+        alt="Star"
+        width={24}
+        height={24}
+      />
+    );
   }
 
   for (let i = 0; i < emptyStars; i++) {
     starIcons.push(
-      <Image src={StarEmptyIcon} alt="Star" width={24} height={24} />
+      <Image
+        key={`emptyStar_key${i}`}
+        src={StarEmptyIcon}
+        alt="Star"
+        width={24}
+        height={24}
+      />
     );
   }
 
