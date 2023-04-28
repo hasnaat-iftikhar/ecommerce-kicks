@@ -1,10 +1,13 @@
 import React from "react";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 // Components
 import Button from "../button";
 
 const ProductCard = ({ className, name, image, price }) => {
+  const router = useRouter();
+
   return (
     <div
       className={`relative flex flex-col flex-wrap gap-y-4 ${className ?? ""}`}
@@ -27,7 +30,14 @@ const ProductCard = ({ className, name, image, price }) => {
       <h3 className="uppercase xl:text-[22px] xxl:text-[24px] leading-[28.44px] font-semibold text-gray_dark">
         {name}
       </h3>
-      <Button className="bg-gray_dark text-white">
+      <Button
+        onClick={() => {
+          const removeWhiteSpaces = name.replace(/\s+/g, "-");
+          const convertToLowercase = removeWhiteSpaces.toLowerCase();
+          router.push(`product/${convertToLowercase}`);
+        }}
+        className="bg-gray_dark text-white"
+      >
         View product - <span className="text-yellow">${price}</span>
       </Button>
     </div>
