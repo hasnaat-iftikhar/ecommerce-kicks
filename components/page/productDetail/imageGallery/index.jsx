@@ -9,7 +9,10 @@ const ImageGallery = ({ className, galleryImages, productName }) => {
       }`}
     >
       {galleryImages.map((img, i) => (
-        <div className="relative basis-[49%] grow h-[40vw] max-h-[510px]">
+        <div
+          key={i}
+          className="relative basis-[49%] grow h-[40vw] max-h-[510px]"
+        >
           <Image
             src={img.image}
             alt={productName ?? "Name of your product"}
