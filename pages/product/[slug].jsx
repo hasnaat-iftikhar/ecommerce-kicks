@@ -26,6 +26,8 @@ const ProductDetail = () => {
     },
   ];
 
+  const colorVarients = ["#253043", "#707E6E"];
+
   return (
     <MainLayout pageTitle="Kicks - The name of the product" className="mt-8">
       <Container>
@@ -38,6 +40,7 @@ const ProductDetail = () => {
           <DetailView
             productName="ADIDAS 4DFWD X PARLEY RUNNING SHOES"
             price={125}
+            colorVarients={colorVarients}
           />
         </section>
       </Container>

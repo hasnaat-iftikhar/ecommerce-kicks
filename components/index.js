@@ -9,6 +9,7 @@ export { default as ProductCard } from "./layout/productCard";
 export { default as ProductCardsWrapper } from "./layout/productCardsWrapper";
 export { default as ReviewCard } from "./layout/reviewCard";
 export { default as ReviewCardsWrapper } from "./layout/reviewCardsWrapper";
+export { default as ColorSelector } from "./layout/colorSelector";
 
 // Page sections
 export { default as HeroSection } from "./page/home/hero";
