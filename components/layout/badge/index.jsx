@@ -7,7 +7,7 @@ const Badge = ({ className = "", type = "default", children }) => {
     warning: "bg-yellow text-gray_dark",
   };
 
-  const classes = `py-3 px-4 text-sm font-medium leading-5 rounded-[12px] w-fit ${badgeClasses[type]} ${className}`;
+  const classes = `h-[38px] px-4 flex justify-center items-center text-sm font-medium leading-5 rounded-[12px] w-fit ${badgeClasses[type]} ${className}`;
 
   return <div className={classes}>{children}</div>;
 };
