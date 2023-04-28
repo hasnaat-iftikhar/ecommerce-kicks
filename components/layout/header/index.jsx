@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 // Font families
 import { Open_Sans } from "next/font/google";
@@ -12,6 +13,8 @@ import SearchIcon from "../../../assets/icons/search.svg";
 import UserIcon from "../../../assets/icons/user.svg";
 
 const Header = ({ className }) => {
+  const router = useRouter();
+
   const menu = [
     {
       name: "New Drops 🔥",
@@ -53,6 +56,9 @@ const Header = ({ className }) => {
           height={32}
           priority
           as="image"
+          onClick={() => {
+            router.push("/");
+          }}
         />
       </div>
       <div className="w-[40%] flex justify-end items-center gap-x-10">
