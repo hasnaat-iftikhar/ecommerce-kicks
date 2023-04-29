@@ -8,6 +8,7 @@ const ColorSelector = ({
 }) => {
   const circleOutlineStyle = {
     borderColor: isSelected ? color : "transparent",
+    cursor: isSelected ? "pointer" : "default",
   };
 
   const innerCircleStyle = {
@@ -22,7 +23,10 @@ const ColorSelector = ({
       }`}
       style={circleOutlineStyle}
     >
-      <div style={innerCircleStyle} className={`w-full h-full rounded-full`} />
+      <div
+        style={innerCircleStyle}
+        className={`w-full h-full rounded-full cursor-pointer`}
+      />
     </div>
   );
 };
