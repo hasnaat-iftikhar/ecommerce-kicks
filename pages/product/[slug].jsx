@@ -114,7 +114,7 @@ const ProductDetail = () => {
 
   return (
     <MainLayout pageTitle="Kicks - The name of the product" className="mt-8">
-      <Container>
+      <Container className="mb-[68px]">
         <Header />
         <section
           id="product-detail"
