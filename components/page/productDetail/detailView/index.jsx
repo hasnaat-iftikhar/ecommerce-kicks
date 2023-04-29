@@ -1,9 +1,18 @@
 import React, { useState } from "react";
+import Image from "next/image";
 
 // Components
 import Badge from "../../../layout/badge";
 import ColorSelector from "../../../layout/colorSelector";
 import SizeSelector from "../../../layout/sizeSelector";
+import Button from "../../../layout/button";
+
+// Icons
+import HeartIcon from "../../../../assets/icons/heart.svg";
+
+const BlockWrapper = ({ className = "", children }) => (
+  <div className={`flex flex-col gap-y-2 ${className}`}>{children}</div>
+);
 
 const BlockTitle = ({ className = "", children }) => (
   <h6
@@ -19,6 +28,7 @@ const DetailView = ({
   price = "00.00",
   colorVarients = [],
   sizeVarients = [],
+  about = "",
 }) => {
   const [state, setState] = useState({
     activeColor: colorVarients[0],
@@ -46,7 +56,7 @@ const DetailView = ({
           ${price}.00
         </h4>
       </div>
-      <div className="flex flex-col gap-y-2">
+      <BlockWrapper>
         <BlockTitle>Color</BlockTitle>
         <div className="flex flex-wrap gap-2 items-center justify-start">
           {colorVarients.map((c, i) => (
@@ -58,8 +68,8 @@ const DetailView = ({
             />
           ))}
         </div>
-      </div>
-      <div className="flex flex-col gap-y-2">
+      </BlockWrapper>
+      <BlockWrapper>
         <BlockTitle>Size</BlockTitle>
         <div className="flex flex-wrap gap-1 items-center justify-start">
           {sizeVarients.map((s, i) => (
@@ -77,6 +87,35 @@ const DetailView = ({
             </SizeSelector>
           ))}
         </div>
+      </BlockWrapper>
+      <div className="flex flex-col gap-y-2">
+        <div className="flex gap-x-2">
+          <Button className="bg-gray_dark text-white" onClick={() => {}}>
+            Add to cart
+          </Button>
+          <SizeSelector
+            className="flex-none"
+            isAvailable={true}
+            onClick={() => {}}
+            isSelected={true}
+          >
+            <Image
+              src={HeartIcon}
+              alt="Add to favourites"
+              width={16}
+              height={16}
+            />
+          </SizeSelector>
+        </div>
+        <Button className="bg-blue text-white" onClick={() => {}}>
+          Buy it now
+        </Button>
+      </div>
+      <div className="flex flex-col gap-y-2">
+        <BlockTitle>About the product</BlockTitle>
+        <p className="text-[16px] leading-[22px] text-gray_dark opacity-80">
+          {about}
+        </p>
       </div>
     </div>
   );

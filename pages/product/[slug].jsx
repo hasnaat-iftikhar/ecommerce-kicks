@@ -81,6 +81,15 @@ const ProductDetail = () => {
             price={125}
             colorVarients={colorVarients}
             sizeVarients={sizeVarients}
+            about={
+              <span>
+                Shadow Navy / Army Green
+                <br />
+                <br />
+                This product is excluded from all promotional discounts and
+                offers.
+              </span>
+            }
           />
         </section>
       </Container>
