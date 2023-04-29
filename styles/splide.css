@@ -13,17 +13,11 @@
   border-radius: 0;
 }
 
-.splide__track {
-  border-top-left-radius: 64px;
-  border-top-right-radius: 64px;
-}
-
 .splide__arrows {
   width: 96px;
   height: 40px;
   position: absolute;
   right: 0;
-  top: 28px;
   display: flex;
   justify-content: space-between;
 }
@@ -31,7 +25,6 @@
 .splide__arrow[type="button"] {
   width: 40px;
   height: 40px;
-  background-color: #e7e7e3;
   opacity: 1;
   position: static;
   transform: translateY(0%);
@@ -53,10 +46,48 @@
   display: none;
 }
 
-.splide__arrow--next::before {
+/* ============ Styles for Product categories section ============ */
+/* To add spacing from top for our arrows */
+#product-categories-section .splide__arrows {
+  top: 28px;
+}
+
+/* For border radius */
+#product-categories-section .splide__track {
+  border-top-left-radius: 64px;
+  border-top-right-radius: 64px;
+}
+
+/* Arrows icons */
+#product-categories-section .splide__arrow--next::before {
   background-image: url("../assets/icons/chevronNext.svg");
 }
 
-.splide__arrow--prev::before {
+#product-categories-section .splide__arrow--prev::before {
   background-image: url("../assets/icons/chevronPrev.svg");
+}
+
+/* Background color */
+#product-categories-section .splide__arrow[type="button"] {
+  background-color: #e7e7e3;
+}
+
+/* ============ Styles for Product cards carousel ============ */
+/* To add spacing from top for our arrows */
+#product-cards-carousel-section .splide__arrows {
+  top: 9px;
+}
+
+/* Arrows icons */
+#product-cards-carousel-section .splide__arrow--next::before {
+  background-image: url("../assets/icons/chevronNextWhite.svg");
+}
+
+#product-cards-carousel-section .splide__arrow--prev::before {
+  background-image: url("../assets/icons/chevronPrevWhite.svg");
+}
+
+/* Background color */
+#product-cards-carousel-section .splide__arrow[type="button"] {
+  background-color: #232321;
 }

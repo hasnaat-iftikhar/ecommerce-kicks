@@ -7,6 +7,7 @@ export { default as Input } from "./layout/input";
 export { default as Text } from "./layout/text";
 export { default as ProductCard } from "./layout/productCard";
 export { default as ProductCardsWrapper } from "./layout/productCardsWrapper";
+export { default as ProductCardsCarousel } from "./layout/productCardsCarousel";
 export { default as ReviewCard } from "./layout/reviewCard";
 export { default as ReviewCardsWrapper } from "./layout/reviewCardsWrapper";
 export { default as ColorSelector } from "./layout/colorSelector";

@@ -27,7 +27,10 @@ const CategoriesSection = ({ className }) => {
   ];
 
   return (
-    <section className={`bg-gray_dark ${className ?? ""}`}>
+    <section
+      id="product-categories-section"
+      className={`bg-gray_dark ${className ?? ""}`}
+    >
       <Container className="relative mt-[90px] flex flex-col gap-y-16">
         <Text type="sectionHeading" className="text-white leading-[95%]">
           Categories

@@ -34,7 +34,7 @@ const ProductCard = ({ className, name, image, price }) => {
         onClick={() => {
           const removeWhiteSpaces = name.replace(/\s+/g, "-");
           const convertToLowercase = removeWhiteSpaces.toLowerCase();
-          router.push(`product/${convertToLowercase}`);
+          router.push(`/product/${convertToLowercase}`);
         }}
         className="bg-gray_dark text-white"
       >

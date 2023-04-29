@@ -2,13 +2,25 @@ import React from "react";
 
 // Layout and components
 import { MainLayout } from "../../layouts";
-import { Container, DetailView, Header, ImageGallery } from "../../components";
+import {
+  Container,
+  DetailView,
+  Footer,
+  Header,
+  ImageGallery,
+  ProductCardsCarousel,
+} from "../../components";
 
 // Images
 import GalleryImg1 from "../../assets/products/detail-page/drops_adidas1_1.png";
 import GalleryImg2 from "../../assets/products/detail-page/drops_adidas1_2.png";
 import GalleryImg3 from "../../assets/products/detail-page/drops_adidas1_3.png";
 import GalleryImg4 from "../../assets/products/detail-page/drops_adidas1_4.png";
+
+import DropProductImg1 from "../../assets/products/drops_adidas1.png";
+import DropProductImg2 from "../../assets/products/drops_adidas2.png";
+import DropProductImg3 from "../../assets/products/drops_adidas3.png";
+import DropProductImg4 from "../../assets/products/drops_adidas4.png";
 
 const ProductDetail = () => {
   const images = [
@@ -67,6 +79,39 @@ const ProductDetail = () => {
     },
   ];
 
+  const data = [
+    {
+      image: DropProductImg1,
+      name: "ADIDAS 4DFWD X PARLEY RUNNING SHOES",
+      price: 125,
+    },
+    {
+      image: DropProductImg2,
+      name: "ADIDAS 4DFWD X PARLEY RUNNING SHOES",
+      price: 125,
+    },
+    {
+      image: DropProductImg3,
+      name: "ADIDAS 4DFWD X PARLEY RUNNING SHOES",
+      price: 125,
+    },
+    {
+      image: DropProductImg4,
+      name: "ADIDAS 4DFWD X PARLEY RUNNING SHOES",
+      price: 125,
+    },
+    {
+      image: DropProductImg3,
+      name: "ADIDAS 4DFWD X PARLEY RUNNING SHOES",
+      price: 125,
+    },
+    {
+      image: DropProductImg4,
+      name: "ADIDAS 4DFWD X PARLEY RUNNING SHOES",
+      price: 125,
+    },
+  ];
+
   return (
     <MainLayout pageTitle="Kicks - The name of the product" className="mt-8">
       <Container>
@@ -92,6 +137,9 @@ const ProductDetail = () => {
             }
           />
         </section>
+
+        <ProductCardsCarousel className="mt-32" productsData={data} />
+        <Footer className="mt-24" />
       </Container>
     </MainLayout>
   );
