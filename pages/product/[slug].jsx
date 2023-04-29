@@ -26,7 +26,7 @@ const ProductDetail = () => {
     },
   ];
 
-  const colorVarients = ["#253043", "#707E6E"];
+  const colorVarients = ["#253043", "#707E6E", "#afe714"];
 
   return (
     <MainLayout pageTitle="Kicks - The name of the product" className="mt-8">

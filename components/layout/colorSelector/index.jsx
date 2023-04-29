@@ -7,8 +7,7 @@ const ColorSelector = ({
   className,
 }) => {
   const circleOutlineStyle = {
-    borderColor: color,
-    borderWidth: isSelected && "3px",
+    borderColor: isSelected ? color : "transparent",
   };
 
   const innerCircleStyle = {
@@ -18,9 +17,9 @@ const ColorSelector = ({
   return (
     <div
       onClick={onClick}
-      className={`w-[48px] h-[48px] rounded-full ${
-        isSelected ? "p-[5px]" : ""
-      } ${className ?? ""}`}
+      className={`w-[48px] h-[48px] rounded-full p-[5px] flex justify-center items-center border-[3px] ${
+        className ?? ""
+      }`}
       style={circleOutlineStyle}
     >
       <div style={innerCircleStyle} className={`w-full h-full rounded-full`} />

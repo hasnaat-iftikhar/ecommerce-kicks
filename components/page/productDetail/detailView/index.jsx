@@ -15,14 +15,10 @@ const BlockTitle = ({ className, children }) => (
 );
 
 const DetailView = ({ className, productName, price, colorVarients }) => {
-  const [activeColors, setActiveColors] = useState(
-    colorVarients?.map(() => false)
-  );
+  const [activeColor, setActiveColor] = useState(colorVarients[0]);
 
-  const handleColorClick = (index) => {
-    const newActiveColors = [...activeColors];
-    newActiveColors[index] = !newActiveColors[index];
-    setActiveColors(newActiveColors);
+  const handleColorClick = (color) => {
+    setActiveColor(color);
   };
 
   return (
@@ -38,15 +34,13 @@ const DetailView = ({ className, productName, price, colorVarients }) => {
       </div>
       <div className="flex flex-col gap-y-2">
         <BlockTitle>Color</BlockTitle>
-        <div className="flex gap-4 items-center justify-start">
+        <div className="flex gap-2 items-center justify-start">
           {colorVarients?.map((c, i) => (
             <ColorSelector
               key={i}
               color={c}
-              isSelected={activeColors[i]}
-              onClick={() => {
-                handleColorClick(i);
-              }}
+              isSelected={colorVarients[i] === activeColor}
+              onClick={() => (activeColor !== c ? handleColorClick(c) : {})}
             />
           ))}
         </div>
