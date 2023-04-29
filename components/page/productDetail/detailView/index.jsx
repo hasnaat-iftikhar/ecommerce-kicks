@@ -3,6 +3,7 @@ import React, { useState } from "react";
 // Components
 import Badge from "../../../layout/badge";
 import ColorSelector from "../../../layout/colorSelector";
+import SizeSelector from "../../../layout/sizeSelector";
 
 const BlockTitle = ({ className, children }) => (
   <h6
@@ -43,6 +44,16 @@ const DetailView = ({ className, productName, price, colorVarients }) => {
               onClick={() => (activeColor !== c ? handleColorClick(c) : {})}
             />
           ))}
+        </div>
+      </div>
+      <div className="flex flex-col gap-y-2">
+        <BlockTitle>Size</BlockTitle>
+        <div className="flex gap-1 items-center justify-start">
+          <SizeSelector isAvailable={true} isSelected={true}>
+            25
+          </SizeSelector>
+          <SizeSelector isAvailable={false}>26</SizeSelector>
+          <SizeSelector isAvailable={true}>27</SizeSelector>
         </div>
       </div>
     </div>
