@@ -28,6 +28,45 @@ const ProductDetail = () => {
 
   const colorVarients = ["#253043", "#707E6E", "#afe714"];
 
+  const sizeVarients = [
+    {
+      value: 25,
+      isAvailable: true,
+    },
+    {
+      value: 26,
+      isAvailable: false,
+    },
+    {
+      value: 27,
+      isAvailable: false,
+    },
+    {
+      value: 28,
+      isAvailable: false,
+    },
+    {
+      value: 29,
+      isAvailable: true,
+    },
+    {
+      value: 30,
+      isAvailable: true,
+    },
+    {
+      value: 31,
+      isAvailable: true,
+    },
+    {
+      value: 32,
+      isAvailable: true,
+    },
+    {
+      value: 33,
+      isAvailable: true,
+    },
+  ];
+
   return (
     <MainLayout pageTitle="Kicks - The name of the product" className="mt-8">
       <Container>
@@ -41,6 +80,7 @@ const ProductDetail = () => {
             productName="ADIDAS 4DFWD X PARLEY RUNNING SHOES"
             price={125}
             colorVarients={colorVarients}
+            sizeVarients={sizeVarients}
           />
         </section>
       </Container>

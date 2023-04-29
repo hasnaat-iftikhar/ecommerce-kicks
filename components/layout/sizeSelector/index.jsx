@@ -3,6 +3,7 @@ import React from "react";
 const SizeSelector = ({
   isSelected = false,
   isAvailable = false,
+  onClick = () => {},
   className = "",
   children,
 }) => {
@@ -14,6 +15,7 @@ const SizeSelector = ({
 
   return (
     <div
+      onClick={onClick}
       className={`w-[50px] h-[48px] rounded-[8px] cursor-pointer flex justify-center items-center font-medium ${isAvailableClassNames} ${className}`}
     >
       {children}
