@@ -101,6 +101,16 @@ const ProductDetail = () => {
       price: 125,
     },
     {
+      image: DropProductImg1,
+      name: "ADIDAS 4DFWD X PARLEY RUNNING SHOES",
+      price: 125,
+    },
+    {
+      image: DropProductImg2,
+      name: "ADIDAS 4DFWD X PARLEY RUNNING SHOES",
+      price: 125,
+    },
+    {
       image: DropProductImg3,
       name: "ADIDAS 4DFWD X PARLEY RUNNING SHOES",
       price: 125,
@@ -114,7 +124,7 @@ const ProductDetail = () => {
 
   return (
     <MainLayout pageTitle="Kicks - The name of the product" className="mt-8">
-      <Container className="mb-[68px]">
+      <Container>
         <Header />
         <section
           id="product-detail"
@@ -139,7 +149,7 @@ const ProductDetail = () => {
         </section>
 
         <ProductCardsCarousel className="mt-32" productsData={data} />
-        <Footer className="mt-24" />
+        <Footer className="mt-24 mb-[68px]" />
       </Container>
     </MainLayout>
   );
