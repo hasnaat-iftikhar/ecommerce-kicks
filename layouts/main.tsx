@@ -3,7 +3,7 @@ import Head from "next/head";
 
 // Font families
 import { Rubik } from "next/font/google";
-const rubik = Rubik({ subsets: ["hebrew"] });
+const rubik = Rubik({ subsets: ["latin"] });
 
 const MainLayout = ({ pageTitle, className, children }) => {
   return (
