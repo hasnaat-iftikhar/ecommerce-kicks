@@ -21,3 +21,5 @@ export { default as ReviewsSection } from "./page/home/userReviews";
 
 export { default as ImageGallery } from "./page/productDetail/imageGallery";
 export { default as DetailView } from "./page/productDetail/detailView";
+
+export { default as Banner } from "./page/productsList/banner";

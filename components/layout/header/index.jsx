@@ -18,7 +18,7 @@ const Header = ({ className }) => {
   const menu = [
     {
       name: "New Drops 🔥",
-      link: "/",
+      link: "/product/all",
     },
     {
       name: "Men",
