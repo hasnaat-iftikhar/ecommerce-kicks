@@ -3,8 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 // Font families
-import { Open_Sans } from "next/font/google";
-const open_sans = Open_Sans({ subsets: ["hebrew"] });
+import { OpenSans } from "../font";
 
 // Components
 import Button from "../button";
@@ -35,7 +34,7 @@ const ColumnHeading = ({ className, size, children }) => (
 const ColumnText = ({ className, children }) => (
   <p
     className={`text-[20px] leading-[27px] text-gray font-medium ${
-      open_sans.className
+      OpenSans.className
     } ${className ?? ""}`}
   >
     {children}

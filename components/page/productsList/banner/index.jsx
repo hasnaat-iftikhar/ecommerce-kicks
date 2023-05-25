@@ -2,8 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 // Font families
-import { Open_Sans } from "next/font/google";
-const open_sans = Open_Sans({ subsets: ["hebrew"] });
+import { OpenSans } from "../../../layout/font";
 
 // Images
 import BannerImage from "../../../../assets/products/list-page/banner.png";
@@ -16,7 +15,7 @@ const Banner = ({ className = "" }) => {
       <Image src={BannerImage} alt="Explore new drops 🔥" fill priority />
       <div className="absolute bottom-[6vw] left-[3vw] z-[1] flex flex-col gap-y-2">
         <h3
-          className={`text-white text-[24px] leading-[33px] font-semibold ${open_sans.className}`}
+          className={`text-white text-[24px] leading-[33px] font-semibold ${OpenSans.className}`}
         >
           Limited time only
         </h3>

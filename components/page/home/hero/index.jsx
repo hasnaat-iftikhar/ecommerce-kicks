@@ -10,6 +10,9 @@ import BannerImage1 from "../../../../assets/products/heroBanner1.png";
 import BannerImage2 from "../../../../assets/products/heroBanner2.png";
 import BannerImage3 from "../../../../assets/products/heroBanner3.png";
 
+// Font families
+import { Rubik } from "../../../layout/font";
+
 const ImageSwitcher = ({ className }) => {
   return (
     <div className={`flex flex-col gap-y-4 ${className ?? ""}`}>
@@ -34,7 +37,9 @@ const ImageSwitcher = ({ className }) => {
 const HeroSection = () => {
   return (
     <section>
-      <h1 className="w-fit mx-auto my-6 uppercase font-bold text-center text-[15.4vw] xxl:text-[224px] leading-tight text-gray_dark">
+      <h1
+        className={`w-fit mx-auto my-6 uppercase font-bold text-center text-[15.4vw] xxl:text-[224px] leading-tight text-gray_dark ${Rubik.className}`}
+      >
         Do it <span className="text-blue">right</span>
       </h1>
       <div className="w-[92vw] xxl:w-full h-[53.6vw] xxl:h-[750px] rounded-[64px] relative overflow-hidden flex justify-start items-end">

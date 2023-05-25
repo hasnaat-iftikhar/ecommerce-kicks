@@ -4,8 +4,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 // Font families
-import { Open_Sans } from "next/font/google";
-const open_sans = Open_Sans({ subsets: ["hebrew"] });
+import { OpenSans } from "../font";
 
 // Images
 import HeaderLogo from "../../../assets/logo_header.svg";
@@ -82,7 +81,7 @@ const Header = ({ className }) => {
         </button>
         <button className="bg-yellow w-[32px] h-[32px] flex justify-center items-center rounded-full">
           <p
-            className={`text-gray_dark text-base ${open_sans.className} font-semibold cursor-pointer`}
+            className={`text-gray_dark text-base ${OpenSans.className} font-semibold cursor-pointer`}
           >
             0
           </p>

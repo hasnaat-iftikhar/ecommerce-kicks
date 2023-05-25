@@ -12,6 +12,7 @@ export { default as ReviewCard } from "./layout/reviewCard";
 export { default as ReviewCardsWrapper } from "./layout/reviewCardsWrapper";
 export { default as ColorSelector } from "./layout/colorSelector";
 export { default as SizeSelector } from "./layout/sizeSelector";
+export { Rubik, OpenSans } from "./layout/font";
 
 // Page sections
 export { default as HeroSection } from "./page/home/hero";
@@ -23,3 +24,4 @@ export { default as ImageGallery } from "./page/productDetail/imageGallery";
 export { default as DetailView } from "./page/productDetail/detailView";
 
 export { default as Banner } from "./page/productsList/banner";
+export { default as Filters } from "./page/productsList/filters";

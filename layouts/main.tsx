@@ -2,8 +2,7 @@ import React from "react";
 import Head from "next/head";
 
 // Font families
-import { Rubik } from "next/font/google";
-const rubik = Rubik({ subsets: ["latin"] });
+import { Rubik } from "../components/layout/font";
 
 const MainLayout = ({ pageTitle, className, children }) => {
   return (
@@ -16,7 +15,7 @@ const MainLayout = ({ pageTitle, className, children }) => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${rubik.className} ${className ?? ""}`}>
+      <main className={`${Rubik.className} ${className ?? ""}`}>
         {children}
       </main>
     </>
