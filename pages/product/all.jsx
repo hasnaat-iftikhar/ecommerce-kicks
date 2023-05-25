@@ -12,7 +12,126 @@ import {
   Footer,
 } from "../../components";
 
+// Images
+import DropProductImg1 from "../../assets/products/drops_adidas1.png";
+import DropProductImg2 from "../../assets/products/drops_adidas2.png";
+import DropProductImg3 from "../../assets/products/drops_adidas3.png";
+import DropProductImg4 from "../../assets/products/drops_adidas4.png";
+
 const ProductsList = () => {
+  const data = [
+    {
+      image: DropProductImg1,
+      name: "ADIDAS 4DFWD X PARLEY RUNNING SHOES",
+      price: 125,
+    },
+    {
+      image: DropProductImg2,
+      name: "ADIDAS 4DFWD X PARLEY RUNNING SHOES",
+      price: 125,
+    },
+    {
+      image: DropProductImg3,
+      name: "ADIDAS 4DFWD X PARLEY RUNNING SHOES",
+      price: 125,
+    },
+    {
+      image: DropProductImg4,
+      name: "ADIDAS 4DFWD X PARLEY RUNNING SHOES",
+      price: 125,
+    },
+    {
+      image: DropProductImg1,
+      name: "ADIDAS 4DFWD X PARLEY RUNNING SHOES",
+      price: 125,
+    },
+    {
+      image: DropProductImg2,
+      name: "ADIDAS 4DFWD X PARLEY RUNNING SHOES",
+      price: 125,
+    },
+    {
+      image: DropProductImg3,
+      name: "ADIDAS 4DFWD X PARLEY RUNNING SHOES",
+      price: 125,
+    },
+    {
+      image: DropProductImg4,
+      name: "ADIDAS 4DFWD X PARLEY RUNNING SHOES",
+      price: 125,
+    },
+    {
+      image: DropProductImg4,
+      name: "ADIDAS 4DFWD X PARLEY RUNNING SHOES",
+      price: 125,
+    },
+    {
+      image: DropProductImg1,
+      name: "ADIDAS 4DFWD X PARLEY RUNNING SHOES",
+      price: 125,
+    },
+    {
+      image: DropProductImg2,
+      name: "ADIDAS 4DFWD X PARLEY RUNNING SHOES",
+      price: 125,
+    },
+    {
+      image: DropProductImg3,
+      name: "ADIDAS 4DFWD X PARLEY RUNNING SHOES",
+      price: 125,
+    },
+    {
+      image: DropProductImg4,
+      name: "ADIDAS 4DFWD X PARLEY RUNNING SHOES",
+      price: 125,
+    },
+    {
+      image: DropProductImg4,
+      name: "ADIDAS 4DFWD X PARLEY RUNNING SHOES",
+      price: 125,
+    },
+    {
+      image: DropProductImg1,
+      name: "ADIDAS 4DFWD X PARLEY RUNNING SHOES",
+      price: 125,
+    },
+    {
+      image: DropProductImg2,
+      name: "ADIDAS 4DFWD X PARLEY RUNNING SHOES",
+      price: 125,
+    },
+    {
+      image: DropProductImg3,
+      name: "ADIDAS 4DFWD X PARLEY RUNNING SHOES",
+      price: 125,
+    },
+    {
+      image: DropProductImg4,
+      name: "ADIDAS 4DFWD X PARLEY RUNNING SHOES",
+      price: 135,
+    },
+    {
+      image: DropProductImg4,
+      name: "ADIDAS 4DFWD X PARLEY RUNNING SHOES",
+      price: 135,
+    },
+    {
+      image: DropProductImg4,
+      name: "ADIDAS 4DFWD X PARLEY RUNNING SHOES",
+      price: 135,
+    },
+    {
+      image: DropProductImg4,
+      name: "ADIDAS 4DFWD X PARLEY RUNNING SHOES",
+      price: 135,
+    },
+    {
+      image: DropProductImg4,
+      name: "ADIDAS 4DFWD X PARLEY RUNNING SHOES",
+      price: 135,
+    },
+  ];
+
   return (
     <MainLayout pageTitle="Kicks - All products" className="mt-8">
       <Container>
@@ -30,8 +149,9 @@ const ProductsList = () => {
         </div>
         <section className="mt-[32px] flex flex-row gap-[19px]">
           <Filters className="max-w-[315px]" />
-          <Products />
+          <Products productsData={data} />
         </section>
+
         <Footer className="my-[68px]" />
       </Container>
     </MainLayout>

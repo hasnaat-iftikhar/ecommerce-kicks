@@ -1,59 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
+import ReactPaginate from "react-paginate";
 
 // Components
 import ProductCardsWrapper from "../../../layout/productCardsWrapper";
 
-// Images
-import DropProductImg1 from "../../../../assets/products/drops_adidas1.png";
-import DropProductImg2 from "../../../../assets/products/drops_adidas2.png";
-import DropProductImg3 from "../../../../assets/products/drops_adidas3.png";
-import DropProductImg4 from "../../../../assets/products/drops_adidas4.png";
+const Products = ({ productsData }) => {
+  const [currentPage, setCurrentPage] = useState(0);
 
-const Products = () => {
-  const data = [
-    {
-      image: DropProductImg1,
-      name: "ADIDAS 4DFWD X PARLEY RUNNING SHOES",
-      price: 125,
-    },
-    {
-      image: DropProductImg2,
-      name: "ADIDAS 4DFWD X PARLEY RUNNING SHOES",
-      price: 125,
-    },
-    {
-      image: DropProductImg3,
-      name: "ADIDAS 4DFWD X PARLEY RUNNING SHOES",
-      price: 125,
-    },
-    {
-      image: DropProductImg4,
-      name: "ADIDAS 4DFWD X PARLEY RUNNING SHOES",
-      price: 125,
-    },
-    {
-      image: DropProductImg1,
-      name: "ADIDAS 4DFWD X PARLEY RUNNING SHOES",
-      price: 125,
-    },
-    {
-      image: DropProductImg2,
-      name: "ADIDAS 4DFWD X PARLEY RUNNING SHOES",
-      price: 125,
-    },
-    {
-      image: DropProductImg3,
-      name: "ADIDAS 4DFWD X PARLEY RUNNING SHOES",
-      price: 125,
-    },
-    {
-      image: DropProductImg4,
-      name: "ADIDAS 4DFWD X PARLEY RUNNING SHOES",
-      price: 125,
-    },
-  ];
+  const handlePageChange = ({ selected }) => {
+    setCurrentPage(selected);
+  };
 
-  return <ProductCardsWrapper productsData={data} columns="3" />;
+  const productsPerPage = 9;
+  const offset = currentPage * productsPerPage;
+  const paginatedData = productsData.slice(offset, offset + productsPerPage);
+
+  return (
+    <div className="flex flex-col gap-y-[64px]">
+      <ProductCardsWrapper productsData={paginatedData} columns="3" />
+      <ReactPaginate
+        pageCount={Math.ceil(productsData.length / 9)}
+        onPageChange={handlePageChange}
+        containerClassName="pagination"
+        activeClassName="active"
+        previousLinkClassName="border border-gray_dark py-[6px] px-[20px] rounded-[8px] text-[14px] leading-[16px]"
+        nextLinkClassName="border border-gray_dark py-[6px] px-[20px] rounded-[8px] text-[14px] leading-[16px]"
+        pageLinkClassName="page-link border border-gray_dark rounded-[8px]"
+        activeLinkClassName="bg-gray_dark text-white"
+      />
+    </div>
+  );
 };
 
 export default Products;

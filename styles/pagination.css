@@ -1,0 +1,15 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.page-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray_dark;
+  min-width: 39px;
+  min-height: 32px;
+}
