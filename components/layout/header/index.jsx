@@ -19,14 +19,6 @@ const Header = ({ className }) => {
       name: "New Drops 🔥",
       link: "/product/all",
     },
-    {
-      name: "Men",
-      link: "/",
-    },
-    {
-      name: "Women",
-      link: "/",
-    },
   ];
 
   return (

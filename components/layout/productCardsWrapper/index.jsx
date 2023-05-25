@@ -3,19 +3,11 @@ import React from "react";
 // Components
 import ProductCard from "../productCard";
 
-const ProductCardsWrapper = ({ productsData, className }) => {
+const ProductCardsWrapper = ({ productsData, columns = 4, className }) => {
   return (
-    <div
-      className={`flex flex-wrap justify-between gap-x-4 ${className ?? ""}`}
-    >
+    <div className={`grid grid-cols-${columns} gap-4 ${className ?? ""}`}>
       {productsData?.map((d, i) => (
-        <ProductCard
-          className="basis-[23%] grow"
-          image={d.image}
-          name={d.name}
-          price={d.price}
-          key={i}
-        />
+        <ProductCard image={d.image} name={d.name} price={d.price} key={i} />
       ))}
     </div>
   );

@@ -25,3 +25,4 @@ export { default as DetailView } from "./page/productDetail/detailView";
 
 export { default as Banner } from "./page/productsList/banner";
 export { default as Filters } from "./page/productsList/filters";
+export { default as Products } from "./page/productsList/products";

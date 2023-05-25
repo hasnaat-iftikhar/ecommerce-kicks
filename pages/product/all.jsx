@@ -1,11 +1,16 @@
 import React from "react";
 
-// Font families
-import { Filters, OpenSans } from "../../components";
-
 // Layout and components
 import { MainLayout } from "../../layouts";
-import { Banner, Container, Header } from "../../components";
+import {
+  Banner,
+  Container,
+  Header,
+  Filters,
+  OpenSans,
+  Products,
+  Footer,
+} from "../../components";
 
 const ProductsList = () => {
   return (
@@ -23,12 +28,11 @@ const ProductsList = () => {
             122 items
           </p>
         </div>
-        <section className="mt-[32px]">
-          <h3 className="text-[24px] leading-[28px] text-gray_dark font-semibold">
-            Filters
-          </h3>
-          <Filters className="mt-[24px] max-w-[315px]" />
+        <section className="mt-[32px] flex flex-row gap-[19px]">
+          <Filters className="max-w-[315px]" />
+          <Products />
         </section>
+        <Footer className="my-[68px]" />
       </Container>
     </MainLayout>
   );
