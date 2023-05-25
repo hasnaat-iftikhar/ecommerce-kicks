@@ -13,7 +13,7 @@ const ProductCardsCarousel = ({ className = "", productsData = [] }) => {
       className={`relative flex flex-col gap-y-8 ${className}`}
     >
       <h3 className="text-[48px] leading-[56.88px] text-gray_dark font-semibold">
-        Categories
+        You may also like
       </h3>
       <Splide options={{ perPage: 4, perMove: 1, gap: "16px" }}>
         {productsData?.map((p, i) => (

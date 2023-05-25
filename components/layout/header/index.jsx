@@ -71,13 +71,16 @@ const Header = ({ className }) => {
             height={28}
           />
         </button>
-        <button className="bg-yellow w-[32px] h-[32px] flex justify-center items-center rounded-full">
+        <Link
+          href="/cart"
+          className="bg-yellow w-[32px] h-[32px] flex justify-center items-center rounded-full"
+        >
           <p
             className={`text-gray_dark text-base ${OpenSans.className} font-semibold cursor-pointer`}
           >
             0
           </p>
-        </button>
+        </Link>
       </div>
     </header>
   );
