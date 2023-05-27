@@ -28,3 +28,5 @@ export { default as Filters } from "./page/productsList/filters";
 export { default as Products } from "./page/productsList/products";
 
 export { default as Bag } from "./page/cart/bag";
+export { default as OrderSummery } from "./page/cart/orderSummary";
+export { default as CartProduct } from "./page/cart/cartProduct";
