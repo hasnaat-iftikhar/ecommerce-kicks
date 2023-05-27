@@ -14,7 +14,7 @@ import Person1 from "../../../../assets/persons/person1.png";
 import Person2 from "../../../../assets/persons/person2.png";
 import Person3 from "../../../../assets/persons/person3.png";
 
-const ReviewsSection = ({ className }) => {
+const ReviewsSection = ({ className = "" }) => {
   const reviews = [
     {
       image: Reviews1,
@@ -40,7 +40,7 @@ const ReviewsSection = ({ className }) => {
   ];
 
   return (
-    <section className={`${className ?? ""}`}>
+    <section className={`${className}`}>
       <Container>
         <div className="flex justify-between items-end">
           <Text

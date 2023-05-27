@@ -5,13 +5,11 @@ import { useRouter } from "next/router";
 // Components
 import Button from "../button";
 
-const ProductCard = ({ className, name, image, price }) => {
+const ProductCard = ({ className = "", name, image, price }) => {
   const router = useRouter();
 
   return (
-    <div
-      className={`relative flex flex-col flex-wrap gap-y-4 ${className ?? ""}`}
-    >
+    <div className={`relative flex flex-col flex-wrap gap-y-4 ${className}`}>
       <div className="absolute top-[8px] left-[8px] z-[1] bg-blue w-fit rounded-tl-[21px] rounded-br-[21px] py-3 px-4">
         <p className="text-[12px] leading-[14.22px] text-white font-semibold">
           New

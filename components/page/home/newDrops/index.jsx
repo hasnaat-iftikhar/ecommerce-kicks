@@ -11,7 +11,7 @@ import DropProductImg2 from "../../../../assets/products/drops_adidas2.png";
 import DropProductImg3 from "../../../../assets/products/drops_adidas3.png";
 import DropProductImg4 from "../../../../assets/products/drops_adidas4.png";
 
-const NewDropsSection = ({ className }) => {
+const NewDropsSection = ({ className = "" }) => {
   const data = [
     {
       image: DropProductImg1,
@@ -36,7 +36,7 @@ const NewDropsSection = ({ className }) => {
   ];
 
   return (
-    <section className={`${className ?? ""}`}>
+    <section className={`${className}`}>
       <div className="flex justify-between items-end">
         <Text
           type="sectionHeading"

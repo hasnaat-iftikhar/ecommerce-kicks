@@ -8,9 +8,10 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import Text from "../../../layout/text";
 import Container from "../../../layout/container";
 
+// Icons and Images
+import RedirectIcon from "../../../../assets/icons/arrowTopRight.svg";
 import BasketBallCategoryImage from "../../../../assets/products/categories_basketBallShoes.png";
 import LifeStyleShoesCategoryImage from "../../../../assets/products/categories_lifestyleShoes.png";
-import RedirectIcon from "../../../../assets/icons/arrowTopRight.svg";
 
 const CategoriesSection = ({ className }) => {
   const categoriesInfo = [

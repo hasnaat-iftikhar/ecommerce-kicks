@@ -8,7 +8,7 @@ import { OpenSans } from "../font";
 import StarIcon from "../../../assets/icons/star.svg";
 import StarEmptyIcon from "../../../assets/icons/starEmpty.svg";
 
-const StarRating = ({ className, rating }) => {
+const StarRating = ({ className = "", rating }) => {
   const fullStars = Math.floor(rating);
   const emptyStars = Math.floor(5 - rating);
 
@@ -39,7 +39,7 @@ const StarRating = ({ className, rating }) => {
   }
 
   return (
-    <div className={`flex items-center ${className ?? ""}`}>
+    <div className={`flex items-center ${className}`}>
       {starIcons}
       <span className="ml-1 text-[16px] leading-[21.79px] text-gray_dark font-medium">
         {rating}.0
@@ -49,7 +49,7 @@ const StarRating = ({ className, rating }) => {
 };
 
 const ReviewCard = ({
-  className,
+  className = "",
   feedback,
   description,
   rating,
@@ -58,9 +58,7 @@ const ReviewCard = ({
 }) => {
   return (
     <div
-      className={`rounded-[32px] overflow-hidden flex flex-col ${
-        className ?? ""
-      }`}
+      className={`rounded-[32px] overflow-hidden flex flex-col ${className}`}
     >
       <div className="bg-white p-8 flex flex-row justify-start items-start gap-x-2">
         <div className="flex-1">

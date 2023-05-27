@@ -10,7 +10,9 @@ const FilterBox = ({ className = "", title = "", children }) => {
       <h4 className="uppercase text-gray_dark text-[16px] leading-[18px] font-semibold">
         {title}
       </h4>
-      {children}
+      <div className="flex flex-wrap gap-4 items-center justify-start">
+        {children}
+      </div>
     </div>
   );
 };
@@ -79,37 +81,33 @@ const Filters = ({ className = "" }) => {
       </h3>
       <div className="mt-[24px] flex flex-col gap-y-[24px]">
         <FilterBox title="Size">
-          <div className="flex flex-wrap gap-4 items-center justify-start">
-            {sizeVarients.map((s, i) => (
-              <SizeSelector
-                key={i}
-                isAvailable={s.isAvailable}
-                onClick={() =>
-                  s.isAvailable
-                    ? activeSize !== s.value && handleSizeClick(s.value)
-                    : {}
-                }
-                isSelected={sizeVarients[i].value === activeSize}
-              >
-                {s.value}
-              </SizeSelector>
-            ))}
-          </div>
+          {sizeVarients.map((s, i) => (
+            <SizeSelector
+              key={i}
+              isAvailable={s.isAvailable}
+              onClick={() =>
+                s.isAvailable
+                  ? activeSize !== s.value && handleSizeClick(s.value)
+                  : {}
+              }
+              isSelected={sizeVarients[i].value === activeSize}
+            >
+              {s.value}
+            </SizeSelector>
+          ))}
         </FilterBox>
         <FilterBox title="Color">
-          <div className="flex flex-wrap gap-4 items-center justify-start">
-            {colorVarients.map((c, i) => (
-              <ColorSelector
-                key={i}
-                shape="square"
-                color={c}
-                isSelected={colorVarients[i] === activeColor}
-                onClick={() => activeColor !== c && handleColorClick(c)}
-              >
-                {c.value}
-              </ColorSelector>
-            ))}
-          </div>
+          {colorVarients.map((c, i) => (
+            <ColorSelector
+              key={i}
+              shape="square"
+              color={c}
+              isSelected={colorVarients[i] === activeColor}
+              onClick={() => activeColor !== c && handleColorClick(c)}
+            >
+              {c.value}
+            </ColorSelector>
+          ))}
         </FilterBox>
       </div>
     </div>

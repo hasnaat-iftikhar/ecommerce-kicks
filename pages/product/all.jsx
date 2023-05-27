@@ -133,7 +133,10 @@ const ProductsList = () => {
   ];
 
   return (
-    <MainLayout pageTitle="Kicks - All products" className="mt-8">
+    <MainLayout
+      pageTitle="All of our amazing products - Kicks"
+      className="mt-8"
+    >
       <Container>
         <Header />
         <Banner className="mt-[80px]" />

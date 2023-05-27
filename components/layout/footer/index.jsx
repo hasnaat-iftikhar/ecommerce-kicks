@@ -17,7 +17,7 @@ import TwitterIcon from "../../../assets/icons/socialTwitter.svg";
 import TiktokIcon from "../../../assets/icons/socialTiktok.svg";
 import FooterLogo from "../../../assets/logo_footer.svg";
 
-const ColumnHeading = ({ className, size, children }) => (
+const ColumnHeading = ({ className = "", size, children }) => (
   <h5
     className={`text-yellow font-semibold ${
       size === "lg"
@@ -25,23 +25,21 @@ const ColumnHeading = ({ className, size, children }) => (
         : size === "md"
         ? "text-[24px] leading-[28px]"
         : ""
-    } ${className ?? ""}`}
+    } ${className}`}
   >
     {children}
   </h5>
 );
 
-const ColumnText = ({ className, children }) => (
+const ColumnText = ({ className = "", children }) => (
   <p
-    className={`text-[20px] leading-[27px] text-gray font-medium ${
-      OpenSans.className
-    } ${className ?? ""}`}
+    className={`text-[20px] leading-[27px] text-gray font-medium ${OpenSans.className} ${className}`}
   >
     {children}
   </p>
 );
 
-const Footer = ({ className }) => {
+const Footer = ({ className = "" }) => {
   const categoriesCol = [
     {
       name: "Runners",
@@ -109,9 +107,7 @@ const Footer = ({ className }) => {
 
   return (
     <div
-      className={`relative bg-blue rounded-[48px] overflow-hidden ${
-        className ?? ""
-      }`}
+      className={`relative bg-blue rounded-[48px] overflow-hidden ${className}`}
     >
       <div className="pt-16  px-[72px] flex flex-row items-center">
         <div className="flex-1">

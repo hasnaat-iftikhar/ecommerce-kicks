@@ -5,7 +5,7 @@ const ColorSelector = ({
   isSelected = false,
   shape = "circle",
   onClick,
-  className,
+  className = "",
 }) => {
   const outlineStyle = {
     borderColor: isSelected ? color : "transparent",
@@ -25,9 +25,7 @@ const ColorSelector = ({
           : shape === "square"
           ? "rounded-[12px]"
           : ""
-      } p-[5px] flex justify-center items-center border-[3px] ${
-        className ?? ""
-      }`}
+      } p-[4px] flex justify-center items-center border-[3px] ${className}`}
       style={outlineStyle}
     >
       <div

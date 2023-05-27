@@ -123,7 +123,7 @@ const ProductDetail = () => {
   ];
 
   return (
-    <MainLayout pageTitle="Kicks - The name of the product" className="mt-8">
+    <MainLayout pageTitle="The name of the product - Kicks" className="mt-8">
       <Container>
         <Header />
         <section

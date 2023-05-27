@@ -23,9 +23,7 @@ const Header = ({ className }) => {
 
   return (
     <header
-      className={`bg-fa_white p-8 rounded-3xl flex justify-between items-center ${
-        className ?? ""
-      }`}
+      className={`bg-fa_white p-8 rounded-3xl flex justify-between items-center ${className}`}
     >
       <div className="w-[40%] flex justify-start items-center gap-x-10">
         {menu.map((item, i) => (

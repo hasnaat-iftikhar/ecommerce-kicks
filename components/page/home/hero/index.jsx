@@ -13,9 +13,9 @@ import BannerImage3 from "../../../../assets/products/heroBanner3.png";
 // Font families
 import { Rubik } from "../../../layout/font";
 
-const ImageSwitcher = ({ className }) => {
+const ImageSwitcher = ({ className = "" }) => {
   return (
-    <div className={`flex flex-col gap-y-4 ${className ?? ""}`}>
+    <div className={`flex flex-col gap-y-4 ${className}`}>
       <Image
         src={BannerImage2}
         className="border-[3px] border-gray rounded-[32px]"
@@ -70,7 +70,10 @@ const HeroSection = () => {
           <p className="text-[24px] leading-[32px] text-gray">
             Nike introducing the new air max for everyone&apos;s comfort
           </p>
-          <Button className="max-w-[138px] mt-6 text-white bg-blue">
+          <Button
+            onClick={() => {}}
+            className="max-w-[138px] mt-6 text-white bg-blue"
+          >
             Shop now
           </Button>
         </div>

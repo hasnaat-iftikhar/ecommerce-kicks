@@ -3,11 +3,9 @@ import React from "react";
 // Components
 import ReviewCard from "../reviewCard";
 
-const ReviewCardsWrapper = ({ reviews, className }) => {
+const ReviewCardsWrapper = ({ reviews, className = "" }) => {
   return (
-    <div
-      className={`flex flex-wrap justify-between gap-x-4 ${className ?? ""}`}
-    >
+    <div className={`flex flex-wrap justify-between gap-x-4 ${className}`}>
       {reviews?.map((r, i) => (
         <ReviewCard
           className="basis-[32%] grow"
