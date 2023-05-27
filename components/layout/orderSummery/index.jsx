@@ -29,7 +29,7 @@ const OrderSummery = ({ className = "" }) => {
   const pathname = usePathname();
 
   return (
-    <div className={`w-full ${className}`}>
+    <div className={`${className}`}>
       <h3 className="text-gray_dark text-[32px] leading-[38px] font-semibold">
         Order Summary
       </h3>

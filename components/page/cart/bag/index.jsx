@@ -39,7 +39,7 @@ const Bag = () => {
         />
       </div>
 
-      <OrderSummery className="mr-[30px]" />
+      <OrderSummery className="max-w-[418px] w-full mr-[30px]" />
     </section>
   );
 };

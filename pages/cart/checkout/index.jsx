@@ -18,6 +18,7 @@ import { OpenSans, Rubik } from "../../../components/layout/font";
 
 // Images
 import DropProductImg1 from "../../../assets/products/drops_adidas1.png";
+import { signinRoute } from "../../../constants/routes";
 
 const SectionBox = ({ className = "", title, content, children }) => {
   return (
@@ -48,7 +49,7 @@ const Checkout = () => {
         <section className="mt-[42px] flex justify-between gap-[48px]">
           <div className="flex-1">
             <Link
-              href="#"
+              href={signinRoute}
               className={`underline text-blue_dark font-semibold text-[20px] leading-[28px] ${OpenSans.className}`}
             >
               Login and Checkout faster
