@@ -13,6 +13,7 @@ export { default as ReviewCardsWrapper } from "./layout/reviewCardsWrapper";
 export { default as ColorSelector } from "./layout/colorSelector";
 export { default as SizeSelector } from "./layout/sizeSelector";
 export { Rubik, OpenSans } from "./layout/font";
+export { default as OrderSummery } from "./layout/orderSummery";
 
 // Page sections
 export { default as HeroSection } from "./page/home/hero";
@@ -28,5 +29,6 @@ export { default as Filters } from "./page/productsList/filters";
 export { default as Products } from "./page/productsList/products";
 
 export { default as Bag } from "./page/cart/bag";
-export { default as OrderSummery } from "./page/cart/orderSummary";
 export { default as CartProduct } from "./page/cart/cartProduct";
+
+export { default as ProductDetailCard } from "./page/checkout/productDetailCard";

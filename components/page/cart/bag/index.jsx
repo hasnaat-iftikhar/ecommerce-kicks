@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 // Layouts and Components
-import OrderSummery from "../orderSummary";
+import OrderSummery from "../../../layout/orderSummery";
 import CartProduct from "../cartProduct";
 
 // Fonts
@@ -23,22 +23,20 @@ const Bag = () => {
         >
           Items in your bag not reserved- check out now to make them yours.
         </p>
-        <div className="mt-[48px] flex gap-[24px]">
-          <div className="relative w-[207px] h-[255px] rounded-[24px] overflow-hidden">
-            <Image src={DropProductImg1} alt="DROPSET TRAINER SHOES" fill />
-          </div>
-          <CartProduct
-            id={1}
-            title="DROPSET TRAINER SHOES"
-            details={[
-              "Men’s Road Running Shoes ",
-              "Enamel Blue/ University White",
-            ]}
-            size={10}
-            quantity={1}
-            price={130}
-          />
-        </div>
+
+        <CartProduct
+          className="mt-[48px]"
+          id={1}
+          image={DropProductImg1}
+          title="DROPSET TRAINER SHOES"
+          details={[
+            "Men’s Road Running Shoes ",
+            "Enamel Blue/ University White",
+          ]}
+          size={10}
+          quantity={1}
+          price={130}
+        />
       </div>
 
       <OrderSummery className="mr-[30px]" />

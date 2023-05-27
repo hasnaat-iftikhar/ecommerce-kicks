@@ -1,10 +1,11 @@
 import React from "react";
+import { useRouter, usePathname } from "next/navigation";
 
 // Components
-import Button from "../../../layout/button";
+import Button from "../button";
 
 // Fonts
-import { OpenSans } from "../../../layout/font";
+import { OpenSans } from "../font";
 
 const SummeryList = ({ name, value }) => {
   return (
@@ -24,8 +25,11 @@ const SummeryList = ({ name, value }) => {
 };
 
 const OrderSummery = ({ className = "" }) => {
+  const router = useRouter();
+  const pathname = usePathname();
+
   return (
-    <div className={`w-full max-w-[418px] ${className}`}>
+    <div className={`w-full ${className}`}>
       <h3 className="text-gray_dark text-[32px] leading-[38px] font-semibold">
         Order Summary
       </h3>
@@ -46,7 +50,16 @@ const OrderSummery = ({ className = "" }) => {
           $136.99
         </p>
       </div>
-      <Button className="mt-[24px] bg-gray_dark text-white">Checkout</Button>
+      {pathname !== "/cart/checkout" && (
+        <Button
+          onClick={() => {
+            router.push("/cart/checkout");
+          }}
+          className="mt-[24px] bg-gray_dark text-white"
+        >
+          Checkout
+        </Button>
+      )}
     </div>
   );
 };
