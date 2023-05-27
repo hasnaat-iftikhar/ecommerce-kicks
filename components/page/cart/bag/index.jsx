@@ -2,11 +2,30 @@ import React from "react";
 import Image from "next/image";
 
 // Layouts and Components
+import Button from "../../../layout/button";
+
+// Fonts
 import { OpenSans } from "../../../layout/font";
 
 // Images
 import DropProductImg1 from "../../../../assets/products/drops_adidas1.png";
-import Button from "../../../layout/button";
+
+const SummeryList = ({ name, value }) => {
+  return (
+    <div className="flex justify-between items-center">
+      <p
+        className={`text-[20px] leading-[27px] text-gray_dark font-semibold ${OpenSans.className}`}
+      >
+        {name}
+      </p>
+      <p
+        className={`text-[20px] leading-[27px] text-gray_dark font-semibold opacity-80 ${OpenSans.className}`}
+      >
+        {value}
+      </p>
+    </div>
+  );
+};
 
 const Bag = () => {
   return (
@@ -117,42 +136,9 @@ const Bag = () => {
           Order Summary
         </h3>
         <div className="mt-[24px] flex flex-col gap-[16px]">
-          <div className="flex justify-between items-center">
-            <p
-              className={`text-[20px] leading-[27px] text-gray_dark font-semibold ${OpenSans.className}`}
-            >
-              1 ITEM
-            </p>
-            <p
-              className={`text-[20px] leading-[27px] text-gray_dark font-semibold opacity-80 ${OpenSans.className}`}
-            >
-              $130.00
-            </p>
-          </div>
-          <div className="flex justify-between items-center">
-            <p
-              className={`text-[20px] leading-[27px] text-gray_dark font-semibold ${OpenSans.className}`}
-            >
-              Delivery
-            </p>
-            <p
-              className={`text-[20px] leading-[27px] text-gray_dark font-semibold opacity-80 ${OpenSans.className}`}
-            >
-              $6.99
-            </p>
-          </div>
-          <div className="flex justify-between items-center">
-            <p
-              className={`text-[20px] leading-[27px] text-gray_dark font-semibold ${OpenSans.className}`}
-            >
-              Sales Tax
-            </p>
-            <p
-              className={`text-[20px] leading-[27px] text-gray_dark font-semibold opacity-80 ${OpenSans.className}`}
-            >
-              -
-            </p>
-          </div>
+          <SummeryList name="1 ITEM" value="$130.00" />
+          <SummeryList name="Delivery" value="$6.99" />
+          <SummeryList name="Sales Tax" value="-" />
         </div>
         <div className="mt-[16px] flex justify-between items-center">
           <p
