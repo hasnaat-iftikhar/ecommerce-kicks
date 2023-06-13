@@ -5,7 +5,13 @@ import { useRouter } from "next/router";
 // Components
 import Button from "../button";
 
-const ProductCard = ({ className = "", name, image, price }) => {
+const ProductCard = ({
+  className = "",
+  name,
+  image,
+  imageClassName = "",
+  price,
+}) => {
   const router = useRouter();
 
   return (
@@ -15,7 +21,9 @@ const ProductCard = ({ className = "", name, image, price }) => {
           New
         </p>
       </div>
-      <div className="relative border-[8px] w-full h-[25vw] max-h-[399px] border-white rounded-[28px]">
+      <div
+        className={`relative border-[8px] w-full h-[25vw] border-white rounded-[28px] ${imageClassName}`}
+      >
         <Image
           src={image}
           alt={name}

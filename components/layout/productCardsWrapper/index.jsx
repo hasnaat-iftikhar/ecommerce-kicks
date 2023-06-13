@@ -5,20 +5,19 @@ import ProductCard from "../productCard";
 
 const ProductCardsWrapper = ({
   productsData,
-  columns = 4,
-  gap = "16px",
   className = "",
+  productImageClassName = "",
 }) => {
-  const gridStyles = {
-    display: "grid",
-    gridTemplateColumns: `repeat(${columns}, minmax(0, 1fr))`,
-    gap: gap,
-  };
-
   return (
-    <div style={gridStyles} className={className}>
+    <div className={`${className} grid`}>
       {productsData?.map((d, i) => (
-        <ProductCard image={d.image} name={d.name} price={d.price} key={i} />
+        <ProductCard
+          image={d.image}
+          imageClassName={productImageClassName}
+          name={d.name}
+          price={d.price}
+          key={i}
+        />
       ))}
     </div>
   );

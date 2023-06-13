@@ -20,6 +20,7 @@ const ProductCardsCarousel = ({ className = "", productsData = [] }) => {
           <SplideSlide key={i}>
             <ProductCard
               className=""
+              imageClassName="max-h-[399px]"
               image={p.image}
               name={p.name}
               price={p.price}

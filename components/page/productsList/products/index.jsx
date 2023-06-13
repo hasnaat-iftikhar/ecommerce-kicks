@@ -17,7 +17,11 @@ const Products = ({ productsData }) => {
 
   return (
     <div className="flex flex-col gap-y-[64px]">
-      <ProductCardsWrapper productsData={paginatedData} columns="3" />
+      <ProductCardsWrapper
+        productsData={paginatedData}
+        className="grid-cols-3 lg:gap-[10px] xl:gap-[16px]"
+        productImageClassName="max-h-[399px]"
+      />
       <ReactPaginate
         pageCount={Math.ceil(productsData.length / 9)}
         onPageChange={handlePageChange}

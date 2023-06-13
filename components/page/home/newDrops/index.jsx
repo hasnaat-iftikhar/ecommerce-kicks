@@ -56,7 +56,11 @@ const NewDropsSection = ({ className = "" }) => {
           Shop New Drops
         </Button>
       </div>
-      <ProductCardsWrapper className="mt-8" productsData={data} />
+      <ProductCardsWrapper
+        className="mt-8 grid-cols-4 lg:gap-[10px] xl:gap-[16px]"
+        productsData={data}
+        productImageClassName="max-h-[399px]"
+      />
     </section>
   );
 };

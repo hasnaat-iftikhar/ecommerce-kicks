@@ -76,7 +76,7 @@ const ReviewCard = ({
           <Image src={userImage} alt="User image" width={64} height={64} />
         </div>
       </div>
-      <div className="relative w-full h-[325px]">
+      <div className="relative w-full h-full">
         <Image src={image} alt={`Kicks product image - ${description}`} fill />
       </div>
     </div>
