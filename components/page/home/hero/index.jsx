@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 // Components
 import Button from "../../../layout/button";
@@ -35,6 +36,8 @@ const ImageSwitcher = ({ className = "" }) => {
 };
 
 const HeroSection = () => {
+  const router = useRouter();
+
   return (
     <section>
       <h1
@@ -71,7 +74,9 @@ const HeroSection = () => {
             Nike introducing the new air max for everyone&apos;s comfort
           </p>
           <Button
-            onClick={() => {}}
+            onClick={() => {
+              router.push("/product/all");
+            }}
             className="max-w-[138px] mt-6 text-white bg-blue"
           >
             Shop now
