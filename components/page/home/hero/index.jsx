@@ -45,8 +45,14 @@ const HeroSection = () => {
       >
         Do it <span className="text-blue">right</span>
       </h1>
-      <div className="w-[92vw] xxl:w-full h-[53.6vw] xxl:h-[750px] rounded-[64px] relative overflow-hidden flex justify-start items-end">
-        <div className="bg-gray_dark absolute top-[166px] left-[-84px] transform -rotate-90 py-6 px-[25px] rounded-b-2xl">
+      <div className="w-[92vw] xxl:w-full h-[53.6vw] xxl:h-[750px] lg:rounded-[48px] xl:rounded-[64px] relative overflow-hidden flex justify-start items-end">
+        <div
+          className="
+        bg-gray_dark absolute py-[24px] px-[25px] rounded-b-2xl 
+        top-[0px] left-[48px] transform rotate-0 
+        xl:top-[166px] xl:left-[-84px] xl:transform xl:-rotate-90
+        "
+        >
           <p className="text-white text-[16px] leading-[18.96px] font-semibold">
             Nike product of the year
           </p>

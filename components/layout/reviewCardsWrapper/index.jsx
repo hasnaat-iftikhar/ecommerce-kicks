@@ -8,7 +8,7 @@ const ReviewCardsWrapper = ({ reviews, className = "" }) => {
     <div className={`flex flex-wrap justify-between gap-x-4 ${className}`}>
       {reviews?.map((r, i) => (
         <ReviewCard
-          className="basis-[32%] h-[35vw] max-h-[504px] grow"
+          className="basis-[32%] h-[37vw] xl:h-[35vw] max-h-[504px] grow"
           image={r.image}
           feedback={r.feedback}
           description={r.description}

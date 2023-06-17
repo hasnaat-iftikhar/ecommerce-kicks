@@ -11,7 +11,7 @@ const ImageGallery = ({ className, galleryImages, productName }) => {
       {galleryImages.map((img, i) => (
         <div
           key={i}
-          className="relative basis-[49%] grow h-[40vw] max-h-[510px]"
+          className="relative basis-[49%] grow h-[40vw] max-h-[580px]"
         >
           <Image
             src={img.image}
