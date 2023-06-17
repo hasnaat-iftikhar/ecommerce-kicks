@@ -32,7 +32,7 @@ const CategoriesSection = ({ className }) => {
       id="product-categories-section"
       className={`bg-gray_dark ${className ?? ""}`}
     >
-      <Container className="relative mt-[90px] flex flex-col gap-y-16">
+      <Container className="relative mt-[90px] flex flex-col gap-y-[44px] xl:gap-y-16">
         <Text type="sectionHeading" className="text-white leading-[95%]">
           Categories
         </Text>
@@ -52,10 +52,10 @@ const CategoriesSection = ({ className }) => {
                 className="lg:px-[70px] xl:px-[100px]"
               />
               <div className="flex flex-row justify-between items-end absolute bottom-[30px] w-full px-[48px]">
-                <h4 className="w-[min-content] text-[30px] leading-[30px] xl:text-4xl font-semibold text-gray_dark uppercase">
+                <h4 className="w-[min-content] lg:text-[28px] lg:leading-[28px] xl:text-[30px] xl:leading-[30px] xxl:text-4xl font-semibold text-gray_dark uppercase">
                   {s.name}
                 </h4>
-                <button className="cursor-pointer bg-gray_dark w-[48px] h-[48px] rounded-lg flex justify-center items-center">
+                <button className="w-[44px] h-[44px] xl:w-[48px] xl:h-[48px] rounded-lg flex justify-center items-center cursor-pointer bg-gray_dark ">
                   <Image
                     className="cursor-pointer"
                     src={RedirectIcon}

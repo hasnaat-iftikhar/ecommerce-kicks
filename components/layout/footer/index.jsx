@@ -33,7 +33,7 @@ const ColumnHeading = ({ className = "", size, children }) => (
 
 const ColumnText = ({ className = "", children }) => (
   <p
-    className={`text-[20px] leading-[27px] text-gray font-medium ${OpenSans.className} ${className}`}
+    className={`text-[18px] xl:text-[20px] leading-[27px] text-gray font-medium ${OpenSans.className} ${className}`}
   >
     {children}
   </p>
@@ -111,13 +111,13 @@ const Footer = ({ className = "" }) => {
     >
       <div className="pt-16  px-[72px] flex flex-row items-center">
         <div className="flex-1">
-          <h2 className="max-w-[510px] uppercase text-[48px] font-semibold text-white leading-[57px]">
+          <h2 className="max-w-[510px] uppercase font-semibold text-white lg:text-[44px] lg:leading-[48px] xl:text-[48px] xl:leading-[57px]">
             Join our KicksPlus Club & get 15% off
           </h2>
           <ColumnText className="mt-4">
             Sign up for free! Join the community.
           </ColumnText>
-          <form className="mt-8 max-w-[448px] flex flex-row gap-x-1">
+          <form className="lg:mt-6 xl:mt-8 max-w-[448px] flex flex-row gap-x-1">
             <Input
               name="email-address"
               placeholder="Email address"
@@ -129,20 +129,20 @@ const Footer = ({ className = "" }) => {
             </Button>
           </form>
         </div>
-        <div className="relative w-[367px] h-[112px]">
+        <div className="relative lg:w-[330px] xl:w-[367px] h-[112px]">
           <Image src={NewsLetterLogo} alt="Kicks - Ecommerce site" fill />
         </div>
       </div>
 
-      <div className="mt-[40px] pb-[305px] bg-gray_dark rounded-[48px] p-10 flex justify-between gap-x-[122px]">
-        <div className="max-w-[446px] w-full flex flex-col gap-y-1">
+      <div className="mt-[40px] bg-gray_dark rounded-[48px] p-10 flex justify-between pb-[260px] xl:pb-[305px] xl:gap-x-[122px]">
+        <div className="max-w-[380px] xl:max-w-[446px] w-full flex flex-col gap-y-1">
           <ColumnHeading size="lg">About us</ColumnHeading>
           <ColumnText>
             We are the biggest hyperstore in the universe. We got you all cover
             with our exclusive collections and latest drops.
           </ColumnText>
         </div>
-        <div className="flex-1 flex justify-between">
+        <div className="max-w-[590px] xl:max-w-[100%] flex-1 flex justify-between">
           <div className="flex flex-col gap-y-4">
             <ColumnHeading size="md">Categories</ColumnHeading>
             <div className="flex flex-col gap-y-2">
@@ -182,7 +182,7 @@ const Footer = ({ className = "" }) => {
         </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 w-full px-[29px] h-[208px]">
+      <div className="absolute bottom-0 left-0 right-0 w-full px-[29px] h-[140px] xl:h-[208px]">
         <Image src={FooterLogo} alt="Kicks - Ecommerce website" fill />
       </div>
     </div>

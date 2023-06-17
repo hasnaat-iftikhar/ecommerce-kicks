@@ -58,7 +58,7 @@ const ReviewCard = ({
 }) => {
   return (
     <div
-      className={`rounded-[32px] overflow-hidden flex flex-col ${className}`}
+      className={`rounded-[26px] xl:rounded-[32px] overflow-hidden flex flex-col ${className}`}
     >
       <div className="bg-white p-8 flex flex-row justify-start items-start gap-x-2">
         <div className="flex-1">

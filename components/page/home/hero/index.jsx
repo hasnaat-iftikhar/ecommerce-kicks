@@ -41,7 +41,7 @@ const HeroSection = () => {
   return (
     <section>
       <h1
-        className={`w-fit mx-auto my-6 uppercase font-bold text-center text-[15.4vw] xxl:text-[224px] leading-tight text-gray_dark ${Rubik.className}`}
+        className={`w-fit mx-auto my-6 uppercase font-bold text-center text-[15.4vw] xxl:text-[224px] leading-[170px] xl:leading-tight text-gray_dark ${Rubik.className}`}
       >
         Do it <span className="text-blue">right</span>
       </h1>
@@ -69,14 +69,14 @@ const HeroSection = () => {
 
         <ImageSwitcher className="absolute bottom-[32px] right-[32px]" />
 
-        <div className="w-[490px] m-12">
+        <div className="w-[390px] xl:w-[490px] m-12">
           <Text
             type="sectionHeading"
             className="max-w-[589px] leading-[88px] text-white"
           >
             NIKE AIR MAX
           </Text>
-          <p className="text-[24px] leading-[32px] text-gray">
+          <p className="text-[20px] leading-[28px] xl:text-[24px] xl:leading-[32px] text-gray">
             Nike introducing the new air max for everyone&apos;s comfort
           </p>
           <Button
