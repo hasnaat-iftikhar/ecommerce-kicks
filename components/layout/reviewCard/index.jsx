@@ -60,9 +60,9 @@ const ReviewCard = ({
     <div
       className={`rounded-[26px] xl:rounded-[32px] overflow-hidden flex flex-col ${className}`}
     >
-      <div className="bg-white p-8 flex flex-row justify-start items-start gap-x-2">
+      <div className="bg-white flex flex-row justify-start items-start gap-x-2 p-[22px] lg:p-8">
         <div className="flex-1">
-          <h4 className="text-[24px] leading-[28.44px] font-semibold text-gray_dark">
+          <h4 className="text-[20px] leading-[24px] lg:text-[24px] lg:leading-[28.44px] font-semibold text-gray_dark">
             {feedback ?? "Feedback Title"}
           </h4>
           <p

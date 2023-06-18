@@ -43,7 +43,7 @@ const NewDropsSection = ({ className = "" }) => {
       <div className="flex justify-between items-end">
         <Text
           type="sectionHeading"
-          className="max-w-[589px] leading-[95%] text-gray_dark"
+          className="max-w-[46vw] lg:max-w-[589px] leading-[95%] text-gray_dark"
         >
           Don’t miss out new drops
         </Text>
@@ -57,9 +57,9 @@ const NewDropsSection = ({ className = "" }) => {
         </Button>
       </div>
       <ProductCardsWrapper
-        className="mt-8 grid-cols-4 lg:gap-[10px] xl:gap-[16px]"
+        className="mt-8 grid-cols-3 lg:grid-cols-4 gap-[10px] xl:gap-[16px]"
         productsData={data}
-        productImageClassName="max-h-[399px]"
+        productImageClassName="max-h-[360px] lg:max-h-[399px]"
       />
     </section>
   );

@@ -43,16 +43,16 @@ const CategoriesSection = ({ className }) => {
               key={i}
               className={`${
                 i % 2 === 0 ? "bg-[#ECEEF0]" : "bg-[#F6F6F6]"
-              } relative w-[38vw] h-[40vw] xxl:h-[600px]`}
+              } relative w-[38vw] h-[46vw] lg:h-[40vw] xxl:h-[600px]`}
             >
               <Image
                 src={s.image}
                 alt={s.name}
                 fill
-                className="lg:px-[70px] xl:px-[100px]"
+                className="px-[50px] lg:px-[70px] xl:px-[100px]"
               />
               <div className="flex flex-row justify-between items-end absolute bottom-[30px] w-full px-[48px]">
-                <h4 className="w-[min-content] lg:text-[28px] lg:leading-[28px] xl:text-[30px] xl:leading-[30px] xxl:text-4xl font-semibold text-gray_dark uppercase">
+                <h4 className="w-[min-content] text-[3vw] leading-[3.2vw] lg:text-[28px] lg:leading-[28px] xl:text-[30px] xl:leading-[30px] xxl:text-4xl font-semibold text-gray_dark uppercase">
                   {s.name}
                 </h4>
                 <button className="w-[44px] h-[44px] xl:w-[48px] xl:h-[48px] rounded-lg flex justify-center items-center cursor-pointer bg-gray_dark ">

@@ -23,7 +23,7 @@ const Header = ({ className }) => {
 
   return (
     <header
-      className={`bg-fa_white p-8 rounded-3xl flex justify-between items-center ${className}`}
+      className={`bg-fa_white rounded-3xl flex justify-between items-center p-[28px] lg:p-8  ${className}`}
     >
       <div className="w-[40%] flex justify-start items-center gap-x-10">
         {menu.map((item, i) => (
@@ -50,7 +50,7 @@ const Header = ({ className }) => {
           }}
         />
       </div>
-      <div className="w-[40%] flex justify-end items-center gap-x-10">
+      <div className="w-[40%] flex justify-end items-center gap-x-[28px] lg:gap-x-10">
         <button>
           <Image
             className="cursor-pointer"

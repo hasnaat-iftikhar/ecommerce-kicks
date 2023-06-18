@@ -22,7 +22,7 @@ const ProductCard = ({
         </p>
       </div>
       <div
-        className={`relative border-[8px] w-full h-[26vw] border-white rounded-[28px] ${imageClassName}`}
+        className={`relative border-[8px] w-full border-white rounded-[28px] h-[36vw] lg:h-[26vw] ${imageClassName}`}
       >
         <Image
           src={image}
@@ -33,7 +33,7 @@ const ProductCard = ({
               33vw"
         />
       </div>
-      <h3 className="uppercase text-[18px] leading-[26px] xl:text-[22px] xl:leading-[28.44px] xxl:text-[24px] font-semibold text-gray_dark">
+      <h3 className="uppercase text-[2.1vw] leading-[initial] lg:text-[18px] lg:leading-[26px]  xl:text-[22px] xl:leading-[28.44px] xxl:text-[24px] font-semibold text-gray_dark">
         {name}
       </h3>
       <Button
