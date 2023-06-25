@@ -5,10 +5,10 @@ import ReviewCard from "../reviewCard";
 
 const ReviewCardsWrapper = ({ reviews, className = "" }) => {
   return (
-    <div className={`flex flex-wrap justify-between gap-x-4 ${className}`}>
+    <div className={`grid grid-cols-2 lg:grid-cols-3 gap-4 ${className}`}>
       {reviews?.map((r, i) => (
         <ReviewCard
-          className="basis-[32%] h-[37vw] lg:h-[39vw] max-h-[550px] grow"
+          className="h-[52vw] lg:h-[39vw] max-h-[550px] grow"
           image={r.image}
           feedback={r.feedback}
           description={r.description}
