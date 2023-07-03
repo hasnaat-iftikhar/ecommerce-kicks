@@ -22,6 +22,12 @@
   justify-content: space-between;
 }
 
+@media screen and (min-width: 791px) and (max-width: 1024px) {
+  .splide__arrows {
+    width: 88px;
+  }
+}
+
 .splide__arrow[type="button"] {
   width: 40px;
   height: 40px;
@@ -29,6 +35,13 @@
   position: static;
   transform: translateY(0%);
   border-radius: 8px;
+}
+
+@media screen and (min-width: 791px) and (max-width: 1024px) {
+  .splide__arrow[type="button"] {
+    width: 36px;
+    height: 36px;
+  }
 }
 
 .splide__arrow:disabled {
@@ -48,8 +61,27 @@
 
 /* ============ Styles for Product categories section ============ */
 /* To add spacing from top for our arrows */
+
 #product-categories-section .splide__arrows {
-  top: 28px;
+  top: 2px;
+}
+
+@media screen and (min-width: 640px) and (max-width: 790px) {
+  #product-categories-section .splide__arrows {
+    top: -2px;
+  }
+}
+
+@media screen and (min-width: 791px) and (max-width: 1024px) {
+  #product-categories-section .splide__arrows {
+    top: 8px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  #product-categories-section .splide__arrows {
+    top: 28px;
+  }
 }
 
 /* For border radius */

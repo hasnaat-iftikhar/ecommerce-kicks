@@ -33,7 +33,7 @@ const ProductCard = ({
               33vw"
         />
       </div>
-      <h3 className="uppercase text-[2.1vw] leading-[initial] lg:text-[18px] lg:leading-[26px]  xl:text-[22px] xl:leading-[28.44px] xxl:text-[24px] font-semibold text-gray_dark">
+      <h3 className="uppercase text-[2.3vw] md:text-[2.1vw] leading-[initial] lg:text-[18px] lg:leading-[26px]  xl:text-[22px] xl:leading-[28.44px] xxl:text-[24px] font-semibold text-gray_dark">
         {name}
       </h3>
       <Button

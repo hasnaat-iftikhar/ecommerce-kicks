@@ -43,7 +43,7 @@ const NewDropsSection = ({ className = "" }) => {
       <div className="flex justify-between items-end">
         <Text
           type="sectionHeading"
-          className="max-w-[46vw] lg:max-w-[589px] leading-[95%] text-gray_dark"
+          className="max-w-[50vw] md:max-w-[46vw] lg:max-w-[589px] leading-[95%] text-gray_dark"
         >
           Don’t miss out new drops
         </Text>
