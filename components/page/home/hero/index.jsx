@@ -41,7 +41,13 @@ const HeroSection = () => {
   return (
     <section>
       <h1
-        className={`w-fit mx-auto my-6 uppercase font-bold text-center text-[15.4vw] xxl:text-[224px] leading-[140px] lg:leading-[170px] xl:leading-tight text-gray_dark ${Rubik.className}`}
+        className={`
+          w-fit mx-auto my-6 uppercase font-bold text-center text-gray_dark
+          text-[15.4vw] leading-[90px]
+          md:leading-[140px] 
+          xxl:text-[224px] lg:leading-[170px] 
+          xl:leading-tight 
+          ${Rubik.className}`}
       >
         Do it <span className="text-blue">right</span>
       </h1>
@@ -76,7 +82,7 @@ const HeroSection = () => {
 
         <ImageSwitcher className="hidden lg:block absolute bottom-[32px] right-[32px]" />
 
-        <div className="w-[38vw] m-[40px] lg:w-[390px] lg:m-12 xl:w-[490px]">
+        <div className="w-[40vw] md:w-[38vw] m-[40px] lg:w-[390px] lg:m-12 xl:w-[490px]">
           <Text
             type="sectionHeading"
             className="max-w-[589px] text-white leading-[normal] lg:leading-[88px]"

@@ -6,7 +6,7 @@ const Input = ({ type, placeholder, name, className = "", ...rest }) => {
       type={type}
       placeholder={placeholder}
       name={name}
-      className={`py-[14.5px] px-4 text-[16px] leading-[19px] font-normal text-gray bg-transparent rounded-[8px] border ${className}`}
+      className={`py-[10px] lg:py-[14.5px] px-4 text-[16px] leading-[19px] font-normal text-gray bg-transparent rounded-[8px] border ${className}`}
       {...rest}
     />
   );
