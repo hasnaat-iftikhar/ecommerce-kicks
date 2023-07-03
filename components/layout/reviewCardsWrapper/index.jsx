@@ -8,7 +8,7 @@ const ReviewCardsWrapper = ({ reviews, className = "" }) => {
     <div className={`grid grid-cols-2 lg:grid-cols-3 gap-4 ${className}`}>
       {reviews?.map((r, i) => (
         <ReviewCard
-          className="h-[52vw] lg:h-[39vw] max-h-[550px] grow"
+          className="h-[58vw] md:h-[52vw] lg:h-[39vw] max-h-[550px] grow"
           image={r.image}
           feedback={r.feedback}
           description={r.description}

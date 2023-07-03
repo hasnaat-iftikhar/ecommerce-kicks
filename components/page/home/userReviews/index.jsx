@@ -53,7 +53,7 @@ const ReviewsSection = ({ className = "" }) => {
             See all
           </Button>
         </div>
-        <ReviewCardsWrapper className="mt-12" reviews={reviews} />
+        <ReviewCardsWrapper className="mt-6 md:mt-12" reviews={reviews} />
       </Container>
     </section>
   );
