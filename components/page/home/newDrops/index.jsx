@@ -40,10 +40,10 @@ const NewDropsSection = ({ className = "" }) => {
 
   return (
     <section className={`${className}`}>
-      <div className="flex justify-between items-end">
+      <div className="flex justify-between flex-col items-start sm:flex-row sm:items-end">
         <Text
           type="sectionHeading"
-          className="max-w-[50vw] md:max-w-[46vw] lg:max-w-[589px] leading-[95%] text-gray_dark"
+          className="max-w-[68vw] sm:max-w-[50vw] md:max-w-[46vw] lg:max-w-[589px] leading-[95%] text-gray_dark"
         >
           Don’t miss out new drops
         </Text>
@@ -57,7 +57,7 @@ const NewDropsSection = ({ className = "" }) => {
         </Button>
       </div>
       <ProductCardsWrapper
-        className="mt-8 grid-cols-3 lg:grid-cols-4 gap-[10px] xl:gap-[16px]"
+        className="mt-8 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-[10px] xl:gap-[16px]"
         productsData={data}
         productImageClassName="max-h-[360px] lg:max-h-[399px]"
       />
