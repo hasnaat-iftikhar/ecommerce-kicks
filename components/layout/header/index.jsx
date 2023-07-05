@@ -25,7 +25,7 @@ const Header = ({ className }) => {
     <header
       className={`bg-fa_white rounded-3xl flex justify-between items-center p-[28px] lg:p-8  ${className}`}
     >
-      <div className="w-[40%] flex justify-start items-center gap-x-10">
+      <div className="w-[40%] justify-start items-center gap-x-10 hidden sm:flex">
         {menu.map((item, i) => (
           <Link
             href={item.link}
@@ -36,9 +36,9 @@ const Header = ({ className }) => {
           </Link>
         ))}
       </div>
-      <div className="w-[20%] flex justify-center items-center">
+      <div className="sm:w-[20%] flex justify-center items-center">
         <Image
-          className="cursor-pointer"
+          className="cursor-pointer w-[80px] h-[auto] sm:w-[128px] sm:h-[32px]"
           src={HeaderLogo}
           alt="Kicks - Ecommerce store"
           width={128}
@@ -50,10 +50,10 @@ const Header = ({ className }) => {
           }}
         />
       </div>
-      <div className="w-[40%] flex justify-end items-center gap-x-[28px] lg:gap-x-10">
+      <div className="w-[40%] flex justify-end items-center gap-x-[28px] sm:gap-x-[20px] md:gap-x-[28px] lg:gap-x-10">
         <button>
           <Image
-            className="cursor-pointer"
+            className="cursor-pointer w-[22px] h-[22px] md:w-[28px] md:h-[28px]"
             src={SearchIcon}
             alt="Search your fav shoe now!"
             width={28}
@@ -62,7 +62,7 @@ const Header = ({ className }) => {
         </button>
         <button>
           <Image
-            className="cursor-pointer"
+            className="cursor-pointer w-[22px] h-[22px] md:w-[28px] md:h-[28px]"
             src={UserIcon}
             alt="View your profile"
             width={28}
@@ -71,7 +71,7 @@ const Header = ({ className }) => {
         </button>
         <Link
           href="/cart"
-          className="bg-yellow w-[32px] h-[32px] flex justify-center items-center rounded-full"
+          className="bg-yellow w-[28px] h-[28px] md:w-[32px] md:h-[32px] flex justify-center items-center rounded-full"
         >
           <p
             className={`text-gray_dark text-base ${OpenSans.className} font-semibold cursor-pointer`}

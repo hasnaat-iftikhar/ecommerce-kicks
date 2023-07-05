@@ -24,7 +24,7 @@ export default function Home() {
       <CategoriesSection />
       <ReviewsSection />
       <Container>
-        <Footer className="mb-[68px]" />
+        <Footer className="mb-[48px] md:mb-[68px]" />
       </Container>
     </MainLayout>
   );

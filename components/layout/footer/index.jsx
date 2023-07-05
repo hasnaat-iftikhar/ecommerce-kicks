@@ -21,7 +21,7 @@ const ColumnHeading = ({ className = "", size, children }) => (
   <h5
     className={`text-yellow font-semibold ${
       size === "lg"
-        ? "text-[30px] leading-[34px] lg:text-[36px] lg:leading-[42.66px]"
+        ? "text-[26px] leading-[24px] md:text-[30px] md:leading-[34px] lg:text-[36px] lg:leading-[42.66px]"
         : size === "md"
         ? "text-[22px] leading-[28px] lg:text-[24px] lg:leading-[28px]"
         : ""
@@ -33,7 +33,7 @@ const ColumnHeading = ({ className = "", size, children }) => (
 
 const ColumnText = ({ className = "", children }) => (
   <p
-    className={`text-[16px] leading-[22px] lg:text-[18px] lg:leading-[27px] xl:text-[20px] text-gray font-medium ${OpenSans.className} ${className}`}
+    className={`text-[16px] leading-[20px] lg:text-[18px] lg:leading-[27px] xl:text-[20px] text-gray font-medium ${OpenSans.className} ${className}`}
   >
     {children}
   </p>
@@ -117,7 +117,7 @@ const Footer = ({ className = "" }) => {
           <ColumnText className="mt-4">
             Sign up for free! Join the community.
           </ColumnText>
-          <form className="mt-[18px] lg:mt-6 xl:mt-8 max-w-[44vw] lg:max-w-[448px] flex flex-row gap-x-1">
+          <form className="mt-[18px] lg:mt-6 xl:mt-8 max-w-[48vw] md:max-w-[44vw] lg:max-w-[448px] flex flex-row gap-x-1">
             <Input
               name="email-address"
               placeholder="Email address"
