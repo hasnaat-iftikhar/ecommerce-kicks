@@ -43,7 +43,8 @@ const HeroSection = () => {
       <h1
         className={`
           w-fit mx-auto my-6 uppercase font-bold text-center text-gray_dark
-          text-[15.4vw] leading-[90px]
+          text-[15.4vw] leading-[100%]
+          sm:leading-[90px]
           md:leading-[140px] 
           xxl:text-[224px] lg:leading-[170px] 
           xl:leading-tight 
@@ -51,10 +52,11 @@ const HeroSection = () => {
       >
         Do it <span className="text-blue">right</span>
       </h1>
-      <div className="w-[92vw] xxl:w-full h-[53.6vw] xxl:h-[750px] lg:rounded-[48px] xl:rounded-[64px] relative overflow-hidden flex justify-start items-end">
+      <div className="w-full sm:w-[92vw] xxl:w-full h-[86vw] sm:h-[53.6vw] xxl:h-[750px] rounded-[30px] lg:rounded-[48px] xl:rounded-[64px] relative overflow-hidden flex justify-start items-end">
         <div
           className="
-        bg-gray_dark absolute px-[25px] rounded-b-2xl
+          hidden sm:absolute
+        bg-gray_dark px-[25px] rounded-b-2xl
           py-[20px] top-[130px] right-[-84px] trasnform rotate-90
           lg:py-[24px] lg:top-[0px] lg:left-[48px] lg:right-[auto] lg:transform lg:rotate-0
           xl:top-[166px] xl:left-[-84px] xl:transform xl:-rotate-90
@@ -77,19 +79,20 @@ const HeroSection = () => {
             priority
             fill
             alt="NIKE AIR MAX - Banner image"
+            className="object-cover sm:object-fill"
           />
         </div>
 
         <ImageSwitcher className="hidden lg:block absolute bottom-[32px] right-[32px]" />
 
-        <div className="w-[40vw] md:w-[38vw] m-[40px] lg:w-[390px] lg:m-12 xl:w-[490px]">
+        <div className="w-[58vw] sm:w-[40vw] md:w-[38vw] m-[30px] sm:m-[40px] lg:w-[390px] lg:m-12 xl:w-[490px]">
           <Text
             type="sectionHeading"
             className="max-w-[589px] text-white leading-[normal] lg:leading-[88px]"
           >
             NIKE AIR MAX
           </Text>
-          <p className="text-[18px] leading-[24px] lg:text-[20px] lg:leading-[28px] xl:text-[24px] xl:leading-[32px] text-gray">
+          <p className="text-[16px] leading-[20bpx] sm:text-[18px] sm:leading-[24px] lg:text-[20px] lg:leading-[28px] xl:text-[24px] xl:leading-[32px] text-gray">
             Nike introducing the new air max for everyone&apos;s comfort
           </p>
           <Button
