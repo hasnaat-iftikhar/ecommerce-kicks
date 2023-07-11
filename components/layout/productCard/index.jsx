@@ -22,7 +22,7 @@ const ProductCard = ({
         </p>
       </div>
       <div
-        className={`relative border-[8px] w-full border-white rounded-[28px] h-[56vw] sm:h-[36vw] lg:h-[26vw] ${imageClassName}`}
+        className={`relative overflow-auto border-[8px] w-full border-white rounded-[28px] h-[56vw] sm:h-[36vw] lg:h-[26vw] ${imageClassName}`}
       >
         <Image
           src={image}
